@@ -1,0 +1,48 @@
+# General
+.DS_Store
+Thumbs.db
+*.log
+logs/
+*.tmp
+*.swp
+
+# Node / Frontend
+node_modules/
+frontend-master-vue/node_modules/
+frontend-master-vue/dist/
+frontend-master-vue/.env.*
+frontend-master-vue/.vite
+
+# Python / Backend
+backend/venv/
+backend/.env.*
+backend/__pycache__/
+backend/**/*.pyc
+backend/.pytest_cache/
+backend/.coverage
+backend/coverage/
+
+# Data & caches
+backend/data/chroma/
+backend/data/**/*.sqlite3
+backend/app/utils/__pycache__/
+data/
+
+# Editor / OS
+.vscode/
+.idea/
+
+# Docker & Compose
+backend/.docker/
+*.local
+
+# Build outputs
+**/dist/
+**/build/
+
+# Test artifacts
+coverage/
+
+# Misc
+*.bak
+*.orig
