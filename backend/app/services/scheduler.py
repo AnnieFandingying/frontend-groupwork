@@ -41,8 +41,11 @@ def start_scheduler():
         scheduler.start()
         logger.info("News crawler scheduler started successfully")
         
-        # 启动时执行一次
-        crawl_news_job()
+        # 启动时在后台执行一次（不阻塞）
+        try:
+            crawl_news_job()
+        except Exception as e:
+            logger.error(f"Initial news crawl failed: {e}")
         
     except Exception as e:
         logger.error(f"Failed to start scheduler: {e}")
@@ -51,7 +54,7 @@ def stop_scheduler():
     """停止调度器"""
     try:
         if scheduler.running:
-            scheduler.shutdown()
+            scheduler.shutdown(wait=False)  # 不等待任务完成，快速关闭
             logger.info("News crawler scheduler stopped")
     except Exception as e:
         logger.error(f"Failed to stop scheduler: {e}")

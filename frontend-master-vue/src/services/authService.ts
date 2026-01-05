@@ -1,5 +1,6 @@
 import { ref, computed } from 'vue';
 import type { User, AuthResponse } from '../types';
+import { encryptPassword } from '../utils/crypto';
 
 // 用户状态管理
 const user = ref<User | null>(null);
@@ -11,7 +12,7 @@ const error = ref<string>('');
 const isAuthenticated = computed(() => !!user.value && !!token.value);
 
 // API基础URL
-const API_BASE = 'http://localhost:8000/api/v1';
+const API_BASE = `${import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000'}/api/v1`;
 
 // 设置认证头
 const getAuthHeaders = () => ({
@@ -27,9 +28,12 @@ export const useAuth = () => {
     error.value = '';
     
     try {
+      // 加密密码
+      const encryptedPassword = await encryptPassword(password);
+      
       const formData = new FormData();
       formData.append('username', email);
-      formData.append('password', password);
+      formData.append('password', encryptedPassword);
       
       const response = await fetch(`${API_BASE}/auth/login`, {
         method: 'POST',
@@ -64,12 +68,15 @@ export const useAuth = () => {
     error.value = '';
     
     try {
+      // 加密密码
+      const encryptedPassword = await encryptPassword(password);
+      
       const response = await fetch(`${API_BASE}/auth/register`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ username, email, password }),
+        body: JSON.stringify({ username, email, password: encryptedPassword }),
       });
       
       if (!response.ok) {

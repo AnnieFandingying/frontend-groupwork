@@ -115,7 +115,6 @@
         <template v-if="currentRoute === AppRoute.DASHBOARD">
           <div class="col-span-12 lg:col-span-8 row-span-7">
             <KnowledgeGraph 
-              :data="INITIAL_GRAPH_DATA" 
               :onMaximize="() => navigate(AppRoute.GRAPH)"
             />
           </div>
@@ -133,7 +132,7 @@
         </template>
 
         <div v-if="currentRoute === AppRoute.GRAPH" class="col-span-12 row-span-11">
-          <KnowledgeGraph :data="INITIAL_GRAPH_DATA" />
+          <KnowledgeGraph />
         </div>
 
         <div v-if="currentRoute === AppRoute.ARENA" class="col-span-12 row-span-11">
@@ -163,7 +162,6 @@ import NewsFeed from './components/NewsFeed.vue';
 import Chat from './components/Chat.vue';
 import AITutor from './components/AITutor.vue';
 import { AppRoute } from './types';
-import { INITIAL_GRAPH_DATA } from './constants';
 import { LayoutGrid, Network, Terminal, Newspaper, Bot, Settings, LogOut } from 'lucide-vue-next';
 import { useAuth } from './services/authService';
 
