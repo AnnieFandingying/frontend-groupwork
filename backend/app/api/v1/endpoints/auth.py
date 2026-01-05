@@ -6,6 +6,7 @@ from typing import Optional
 from jose import JWTError, jwt
 from passlib.context import CryptContext
 from pydantic import BaseModel, EmailStr
+import bcrypt
 
 from app.core.database import get_db
 from app.core.config import settings

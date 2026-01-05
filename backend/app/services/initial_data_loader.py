@@ -41,7 +41,7 @@ def load_initial_news_data(db: Session = None) -> dict:
         
         # 读取初始数据文件
         data_file = os.path.join(
-            os.path.dirname(os.path.dirname(__file__)),
+            os.path.dirname(os.path.dirname(os.path.dirname(__file__))),
             'data',
             'initial_news_data.json'
         )

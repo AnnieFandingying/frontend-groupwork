@@ -190,7 +190,7 @@ import DailyChallenge from './components/DailyChallenge.vue';
 import LearningPath from './components/LearningPath.vue';
 import { AppRoute } from './types';
 import { INITIAL_GRAPH_DATA } from './constants';
-import { LayoutGrid, Network, Terminal, Newspaper, Bot, CalendarCheck, Settings, LogOut } from 'lucide-vue-next';
+import { LayoutGrid, Network, Terminal, Newspaper, Bot, CalendarCheck, Settings, LogOut, Target } from 'lucide-vue-next';
 
 import { useAuth } from './services/authService';
 
