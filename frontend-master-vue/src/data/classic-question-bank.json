@@ -1,0 +1,289 @@
+{
+  "vue": [
+    {
+      "type": "multiple-choice",
+      "focus": "组合式 API",
+      "prompt": "在组合式 API 中，watch 的主要作用是什么？",
+      "options": [
+        {"label": "A", "text": "声明一个新的响应式状态", "correct": false},
+        {"label": "B", "text": "监听响应式数据的变化并触发副作用", "correct": true},
+        {"label": "C", "text": "为组件注册生命周期钩子", "correct": false},
+        {"label": "D", "text": "在模板中声明全局指令", "correct": false}
+      ],
+      "explanation": "watch 用于订阅响应式数据的变化并在变化时执行逻辑。"
+    },
+    {
+      "type": "multiple-choice",
+      "focus": "组件通信",
+      "prompt": "在 Vue 组件中，props 的主要作用是什么？",
+      "options": [
+        {"label": "A", "text": "存储组件的私有状态", "correct": false},
+        {"label": "B", "text": "接收来自父组件的数据并驱动展示", "correct": true},
+        {"label": "C", "text": "触发子组件的自定义事件", "correct": false},
+        {"label": "D", "text": "声明模板中的局部变量", "correct": false}
+      ],
+      "explanation": "props 用于从父组件向下传递数据，实现单向数据流。"
+    },
+    {
+      "type": "multiple-choice",
+      "focus": "生命周期",
+      "prompt": "以下哪些生命周期钩子可以在组合式 API 中使用？",
+      "options": [
+        {"label": "A", "text": "onMounted", "correct": false},
+        {"label": "B", "text": "onUpdated", "correct": false},
+        {"label": "C", "text": "onActivated", "correct": false},
+        {"label": "D", "text": "以上三项都可以", "correct": true}
+      ],
+      "explanation": "组合式 API 暴露的生命周期钩子与选项式 API 功能一致。"
+    },
+    {
+      "type": "multiple-choice",
+      "focus": "事件通信",
+      "prompt": "在 Vue 组件中，emits 选项的作用是什么？",
+      "options": [
+        {"label": "A", "text": "定义组件接收的 props", "correct": false},
+        {"label": "B", "text": "声明组件可能触发的自定义事件", "correct": true},
+        {"label": "C", "text": "配置组件的样式作用域", "correct": false},
+        {"label": "D", "text": "注册全局过滤器", "correct": false}
+      ],
+      "explanation": "通过 emits 声明事件可以获得类型推断并约束触发的事件名。"
+    },
+    {
+      "type": "multiple-choice",
+      "focus": "响应式基础",
+      "prompt": "关于 reactive 函数的描述，下列哪项是正确的？",
+      "options": [
+        {"label": "A", "text": "只能作用于基本类型", "correct": false},
+        {"label": "B", "text": "只能包裹普通对象，无法处理数组", "correct": false},
+        {"label": "C", "text": "仅适用于 Map 和 Set", "correct": false},
+        {"label": "D", "text": "可以把数组或对象转换成响应式数据", "correct": true}
+      ],
+      "explanation": "reactive 可以处理对象、数组等引用类型，返回的代理保持响应式能力。"
+    },
+    {
+      "type": "multiple-choice",
+      "focus": "生命周期",
+      "prompt": "若希望在组件挂载完成后执行一次逻辑，应使用哪个生命周期钩子？",
+      "options": [
+        {"label": "A", "text": "onBeforeMount", "correct": false},
+        {"label": "B", "text": "onMounted", "correct": true},
+        {"label": "C", "text": "onBeforeUpdate", "correct": false},
+        {"label": "D", "text": "onUpdated", "correct": false}
+      ],
+      "explanation": "onMounted 在组件首次渲染并挂载到 DOM 后触发。"
+    },
+    {
+      "type": "multiple-choice",
+      "focus": "插槽",
+      "prompt": "关于插槽 (slot) 的描述，下列哪项是正确的？",
+      "options": [
+        {"label": "A", "text": "插槽只能在父组件中使用，子组件无法定义", "correct": false},
+        {"label": "B", "text": "默认插槽和具名插槽不能同时存在", "correct": false},
+        {"label": "C", "text": "插槽可以让父组件向子组件指定位置传递内容", "correct": true},
+        {"label": "D", "text": "插槽无法配合 v-slot 指令使用", "correct": false}
+      ],
+      "explanation": "插槽让父组件把结构内容传入子组件的占位区域。"
+    },
+    {
+      "type": "multiple-choice",
+      "focus": "表单双向绑定",
+      "prompt": "在表单元素上使用 v-model 相当于组合了哪两种绑定？",
+      "options": [
+        {"label": "A", "text": "value 绑定与 input 事件监听", "correct": true},
+        {"label": "B", "text": "text 绑定与 change 事件监听", "correct": false},
+        {"label": "C", "text": "checked 绑定与 click 事件监听", "correct": false},
+        {"label": "D", "text": "disabled 绑定与 focus 事件监听", "correct": false}
+      ],
+      "explanation": "v-model 语法糖等价于 :value 搭配 @input 的组合。"
+    },
+    {
+      "type": "multiple-choice",
+      "focus": "响应式基础",
+      "prompt": "关于 shallowRef 的描述，哪一项是正确的？",
+      "options": [
+        {"label": "A", "text": "shallowRef 只能存放基本类型", "correct": false},
+        {"label": "B", "text": "只有替换 shallowRef.value 时才会触发更新", "correct": true},
+        {"label": "C", "text": "shallowRef 与 ref 的行为完全一致", "correct": false},
+        {"label": "D", "text": "shallowRef 无法在模板中使用", "correct": false}
+      ],
+      "explanation": "shallowRef 只在引用被整体替换时触发依赖更新。"
+    },
+    {
+      "type": "multiple-choice",
+      "focus": "插槽",
+      "prompt": "在 Vue 3 中为具名插槽 header 提供内容的正确写法是？",
+      "options": [
+        {"label": "A", "text": "<template #header>...</template>", "correct": true},
+        {"label": "B", "text": "<template slot=\"header\">...</template>", "correct": false},
+        {"label": "C", "text": "<template v-slot:header=\"headerData\">...</template>", "correct": false},
+        {"label": "D", "text": "无法给具名插槽单独传递内容", "correct": false}
+      ],
+      "explanation": "在 Vue 3 中推荐使用 # 语法为具名插槽提供内容。"
+    },
+    {
+      "type": "multiple-choice",
+      "focus": "依赖注入",
+      "prompt": "关于 provide / inject，下列哪项是正确的？",
+      "options": [
+        {"label": "A", "text": "provide 的数据必须是响应式对象", "correct": false},
+        {"label": "B", "text": "inject 只能获取直接父级提供的数据", "correct": false},
+        {"label": "C", "text": "inject 可以跨多级组件读取由祖先提供的数据", "correct": true},
+        {"label": "D", "text": "provide 和 inject 必须在同一个组件中使用", "correct": false}
+      ],
+      "explanation": "依赖注入允许祖先组件向任意后代传递共享数据。"
+    },
+    {
+      "type": "multiple-choice",
+      "focus": "依赖注入",
+      "prompt": "在 Vue 3 中，下列哪种 provide 写法会导致 inject 获取到的值无法随更新而变化？",
+      "options": [
+        {"label": "A", "text": "provide('count', ref(0)) 并在子组件中读取该 ref", "correct": false},
+        {"label": "B", "text": "provide('count', count.value) 直接传递原始值", "correct": true},
+        {"label": "C", "text": "provide('count', reactive({ value: 0 })) 并访问对象属性", "correct": false},
+        {"label": "D", "text": "provide('count', computed(() => state.value))", "correct": false}
+      ],
+      "explanation": "直接传递原始值只会得到快照，后续变更不会同步到注入方。"
+    },
+    {
+      "type": "multiple-choice",
+      "focus": "依赖注入",
+      "prompt": "如果在父组件中执行 provide(\"count\", count.value)，子组件通过 inject(\"count\") 获取到的行为是什么？",
+      "options": [
+        {"label": "A", "text": "可以获取初始值且后续 add 更新时同步变化", "correct": false},
+        {"label": "B", "text": "只能获取初始值，后续更新不会同步", "correct": true},
+        {"label": "C", "text": "完全无法获取值，会使用默认值", "correct": false},
+        {"label": "D", "text": "代码会抛出 provide 相关的运行时错误", "correct": false}
+      ],
+      "explanation": "传递 count.value 仅共享了当下的原始值，后续变更不会触发更新。"
+    },
+    {
+      "type": "multiple-choice",
+      "focus": "指令基础",
+      "prompt": "在 Vue 3 中，下列哪个是内置指令？",
+      "options": [
+        {"label": "A", "text": "v-my-directive", "correct": false},
+        {"label": "B", "text": "v-bind", "correct": true},
+        {"label": "C", "text": "v-custom", "correct": false},
+        {"label": "D", "text": "v-new-directive", "correct": false}
+      ],
+      "explanation": "v-bind 是框架内置指令，用于绑定属性。"
+    },
+    {
+      "type": "multiple-choice",
+      "focus": "指令基础",
+      "prompt": "以下哪一个指令用于绑定 HTML 元素属性？",
+      "options": [
+        {"label": "A", "text": "v-on", "correct": false},
+        {"label": "B", "text": "v-bind", "correct": true},
+        {"label": "C", "text": "v-if", "correct": false},
+        {"label": "D", "text": "v-for", "correct": false}
+      ],
+      "explanation": "v-bind 可以动态绑定任意属性或 prop。"
+    },
+    {
+      "type": "multiple-choice",
+      "focus": "条件渲染",
+      "prompt": "以下哪一个指令用于控制元素的条件渲染？",
+      "options": [
+        {"label": "A", "text": "v-bind", "correct": false},
+        {"label": "B", "text": "v-on", "correct": false},
+        {"label": "C", "text": "v-if", "correct": true},
+        {"label": "D", "text": "v-for", "correct": false}
+      ],
+      "explanation": "v-if 根据条件决定元素是否渲染。"
+    },
+    {
+      "type": "multiple-choice",
+      "focus": "响应式基础",
+      "prompt": "在 <script setup> 中创建一个初始值为 0 的响应式计数器，以下哪种写法是正确的？",
+      "options": [
+        {"label": "A", "text": "const count = 0", "correct": false},
+        {"label": "B", "text": "const count = reactive(0)", "correct": false},
+        {"label": "C", "text": "const count = ref(0)", "correct": true},
+        {"label": "D", "text": "let count = 0", "correct": false}
+      ],
+      "explanation": "ref 用于创建可以在模板中使用的响应式基本类型。"
+    },
+    {
+      "type": "multiple-choice",
+      "focus": "样式作用域",
+      "prompt": "若要让样式只作用于当前组件，需要在 <style> 标签上添加什么属性？",
+      "options": [
+        {"label": "A", "text": "scoped", "correct": true},
+        {"label": "B", "text": "local", "correct": false},
+        {"label": "C", "text": "private", "correct": false},
+        {"label": "D", "text": "component", "correct": false}
+      ],
+      "explanation": "scoped 会为当前组件生成独立的样式作用域。"
+    },
+    {
+      "type": "multiple-choice",
+      "focus": "指令基础",
+      "prompt": "在模板中绑定图片的 src 时，以下哪种写法是推荐的？",
+      "options": [
+        {"label": "A", "text": "<img src=\"{{ imageUrl }}\">", "correct": false},
+        {"label": "B", "text": "<img :src=\"imageUrl\">", "correct": true},
+        {"label": "C", "text": "<img v-src=\"imageUrl\">", "correct": false},
+        {"label": "D", "text": "<img bind-src=\"imageUrl\">", "correct": false}
+      ],
+      "explanation": ":src 是 v-bind 的简写，更加语义化。"
+    },
+    {
+      "type": "multiple-choice",
+      "focus": "列表渲染",
+      "prompt": "使用 v-for 遍历 items 并输出每个元素的 name 属性，下列哪段模板代码是正确的？",
+      "options": [
+        {"label": "A", "text": "<li v-for=\"item in items\">{{ item.name }}</li>", "correct": false},
+        {"label": "B", "text": "<li v-for=\"item of items\">{{ item.name }}</li>", "correct": false},
+        {"label": "C", "text": "<li v-for=\"(item, index) in items\">{{ item.name }}</li>", "correct": false},
+        {"label": "D", "text": "以上写法都可以完成需求", "correct": true}
+      ],
+      "explanation": "in 与 of 都可遍历数组，附带索引也同样可行。"
+    },
+    {
+      "type": "multiple-choice",
+      "focus": "计算属性",
+      "prompt": "关于计算属性 (computed) 的描述，哪一项是正确的？",
+      "options": [
+        {"label": "A", "text": "计算属性每次渲染都会重新求值", "correct": false},
+        {"label": "B", "text": "计算属性不支持缓存", "correct": false},
+        {"label": "C", "text": "只有依赖发生变化时计算属性才会重新计算", "correct": true},
+        {"label": "D", "text": "计算属性无法依赖其他计算属性", "correct": false}
+      ],
+      "explanation": "computed 会基于依赖进行缓存，只有依赖变动才会重新求值。"
+    },
+    {
+      "type": "multiple-choice",
+      "focus": "侦听器",
+      "prompt": "侦听器 (watch) 通常用于完成什么任务？",
+      "options": [
+        {"label": "A", "text": "仅用于模板渲染", "correct": false},
+        {"label": "B", "text": "在响应式数据变化时执行副作用逻辑", "correct": true},
+        {"label": "C", "text": "替代所有计算属性", "correct": false},
+        {"label": "D", "text": "强制组件重新挂载", "correct": false}
+      ],
+      "explanation": "watch 适合处理异步请求、日志上报等副作用。"
+    },
+    {
+      "type": "multiple-choice",
+      "focus": "计算属性",
+      "prompt": "关于计算属性的 setter，哪一项说法正确？",
+      "options": [
+        {"label": "A", "text": "计算属性不支持 setter", "correct": false},
+        {"label": "B", "text": "当为计算属性设置值时会调用 setter 并更新依赖数据", "correct": true},
+        {"label": "C", "text": "setter 会在组件渲染时自动执行", "correct": false},
+        {"label": "D", "text": "setter 的返回值决定计算属性的最终值", "correct": false}
+      ],
+      "explanation": "带 setter 的计算属性允许通过赋值反向修改依赖。"
+    },
+    {
+      "type": "fill-in",
+      "focus": "计算属性",
+      "prompt": "根据以下组合式 API 片段，fullName 的最终值是什么？\n\nconst firstName = ref('John');\nconst lastName = ref('Doe');\nconst fullName = computed(() => `${firstName.value} ${lastName.value}`);",
+      "blanks": [
+        {"label": "答案", "answer": "John Doe", "hint": "姓名以空格连接"}
+      ],
+      "explanation": "computed 会把 firstName 与 lastName 拼接成完整姓名。"
+    }
+  ]
+}

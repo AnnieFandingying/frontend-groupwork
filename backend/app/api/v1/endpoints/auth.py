@@ -4,7 +4,7 @@ from sqlalchemy.orm import Session
 from datetime import datetime, timedelta
 from typing import Optional
 from jose import JWTError, jwt
-import bcrypt
+from passlib.context import CryptContext
 from pydantic import BaseModel, EmailStr
 
 from app.core.database import get_db
@@ -14,6 +14,7 @@ from app.models.models import User
 router = APIRouter()
 
 # 密码加密
+pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/api/v1/auth/login")
 
 # 请求模型
@@ -39,17 +40,11 @@ class Token(BaseModel):
     user: UserResponse
 
 # 工具函数
-def verify_password(plain_password: str, hashed_password: str) -> bool:
-    """验证密码"""
-    return bcrypt.checkpw(plain_password.encode('utf-8'), hashed_password.encode('utf-8'))
+def verify_password(plain_password, hashed_password):
+    return pwd_context.verify(plain_password, hashed_password)
 
-def get_password_hash(password: str) -> str:
-    """对密码进行哈希处理,限制密码长度为72字节"""
-    # bcrypt 只能处理最多 72 字节的密码
-    password_bytes = password.encode('utf-8')[:72]
-    salt = bcrypt.gensalt()
-    hashed = bcrypt.hashpw(password_bytes, salt)
-    return hashed.decode('utf-8')
+def get_password_hash(password):
+    return pwd_context.hash(password)
 
 def create_access_token(data: dict, expires_delta: Optional[timedelta] = None):
     to_encode = data.copy()
