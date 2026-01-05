@@ -82,7 +82,7 @@ npm run dev
 # 1. 进入后端目录
 cd backend
 
-# 2. 创建虚拟环境（如果没有，有虚拟环境可直接执行第四步）
+# 2. 创建虚拟环境
 python -m venv venv
 
 # 3. 激活虚拟环境

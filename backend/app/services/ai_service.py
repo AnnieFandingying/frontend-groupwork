@@ -1,9 +1,16 @@
+from functools import lru_cache
 from typing import AsyncGenerator, List, Dict, Optional
 from ..core.config import settings
 
-# 动态导入 OpenAI 以避免初始化问题
-client = None
+try:  # Optional OpenAI import to keep backend boot resilient during local setup
+    from openai import OpenAI, OpenAIError  # type: ignore
+except ImportError:  # pragma: no cover - handled gracefully at runtime
+    OpenAI = None  # type: ignore
 
+    class OpenAIError(RuntimeError):  # type: ignore
+        """Fallback error class when OpenAI SDK is unavailable."""
+
+@lru_cache(maxsize=1)
 def get_openai_client():
     global client
     if client is None:
@@ -168,22 +175,27 @@ class AIService:
         """
         完整返回 AI 回复 (非流式)
         """
-        client = self.get_client()
-        if not client:
+        openai_client = self.get_client()
+        if not openai_client:
             return "抱歉，AI 服务未配置 API Key，请联系管理员。"
         
         try:
-            response = client.chat.completions.create(
+            response = openai_client.chat.completions.create(
                 model=settings.OPENAI_MODEL,
                 messages=messages,
                 temperature=0.7,
                 max_tokens=10000
             )
             
-            return response.choices[0].message.content or "我无法生成回复。"
-            
-        except Exception as e:
-            return f"抱歉，AI 服务出现错误: {str(e)}"
+            choices = getattr(response, "choices", []) or []
+            if not choices:
+                return "抱歉，AI 服务未返回有效结果。"
+
+            message = getattr(choices[0], "message", None)
+            content = getattr(message, "content", None)
+            return content or "我无法生成回复。"
+        except (OpenAIError, ValueError, RuntimeError) as exc:
+            return f"抱歉，AI 服务出现错误: {exc}"
 
 
 # Legacy functions for backward compatibility
@@ -191,8 +203,8 @@ async def chat_stream(message: str, history: list = None) -> AsyncGenerator[str,
     """
     流式返回 AI 回复 (向后兼容)
     """
-    ai_service = AIService()
-    async for chunk in ai_service.chat_stream_with_context(message, "", history):
+    service = AIService()
+    async for chunk in service.chat_stream_with_context(message, "", history):
         yield chunk
 
 
@@ -200,8 +212,8 @@ async def chat_complete(message: str, history: list = None) -> str:
     """
     完整返回 AI 回复 (非流式)
     """
-    openai_client = get_openai_client()
-    if not openai_client:
+    client = get_openai_client()
+    if not client:
         return "抱歉，AI 服务未配置 API Key，请联系管理员。"
     
     messages = [{"role": "system", "content": SYSTEM_PROMPT}]
@@ -212,17 +224,22 @@ async def chat_complete(message: str, history: list = None) -> str:
     messages.append({"role": "user", "content": message})
     
     try:
-        response = openai_client.chat.completions.create(
+        response = client.chat.completions.create(
             model=settings.OPENAI_MODEL,
             messages=messages,
             temperature=0.7,
             max_tokens=10000
         )
         
-        return response.choices[0].message.content or "我无法生成回复。"
-        
-    except Exception as e:
-        return f"抱歉，AI 服务出现错误: {str(e)}"
+        choices = getattr(response, "choices", []) or []
+        if not choices:
+            return "抱歉，AI 服务未返回有效结果。"
+
+        message = getattr(choices[0], "message", None)
+        content = getattr(message, "content", None)
+        return content or "我无法生成回复。"
+    except (OpenAIError, ValueError, RuntimeError) as exc:
+        return f"抱歉，AI 服务出现错误: {exc}"
 
 
 # Singleton instance

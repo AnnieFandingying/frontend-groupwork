@@ -23,7 +23,9 @@
   </div>
 
   <!-- 加载状态 -->
-  <div v-else-if="!isAuthenticated && (currentRoute === AppRoute.DASHBOARD || currentRoute === AppRoute.GRAPH || currentRoute === AppRoute.ARENA || currentRoute === AppRoute.NEWS || currentRoute === AppRoute.AI_TUTOR || currentRoute === AppRoute.LEARNING_PATH)" class="min-h-screen bg-gradient-to-br from-orange-50 to-orange-100 flex items-center justify-center">
+
+  <div v-else-if="!isAuthenticated && (currentRoute === AppRoute.DASHBOARD || currentRoute === AppRoute.GRAPH || currentRoute === AppRoute.ARENA || currentRoute === AppRoute.NEWS || currentRoute === AppRoute.AI_TUTOR || currentRoute === AppRoute.DAILY_CHALLENGE || currentRoute === AppRoute.LEARNING_PATH)" class="min-h-screen bg-gradient-to-br from-orange-50 to-orange-100 flex items-center justify-center">
+
     <div class="text-center">
       <div class="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg shadow-orange-200 animate-pulse">
         <span class="text-white font-bold text-2xl">F</span>
@@ -33,7 +35,8 @@
   </div>
 
   <!-- 主界面 -->
-  <div v-else-if="isAuthenticated && (currentRoute === AppRoute.DASHBOARD || currentRoute === AppRoute.GRAPH || currentRoute === AppRoute.ARENA || currentRoute === AppRoute.NEWS || currentRoute === AppRoute.AI_TUTOR || currentRoute === AppRoute.LEARNING_PATH)" class="flex h-screen w-full bg-[#FDFBF7] text-dark font-sans overflow-hidden">
+
+  <div v-else-if="isAuthenticated && (currentRoute === AppRoute.DASHBOARD || currentRoute === AppRoute.GRAPH || currentRoute === AppRoute.ARENA || currentRoute === AppRoute.NEWS || currentRoute === AppRoute.AI_TUTOR || currentRoute === AppRoute.DAILY_CHALLENGE || currentRoute === AppRoute.LEARNING_PATH)" class="flex h-screen w-full bg-[#FDFBF7] text-dark font-sans overflow-hidden">
     <!-- Sidebar Navigation -->
     <nav class="w-20 lg:w-64 bg-white border-r border-gray-100 flex flex-col justify-between py-6 transition-all duration-300 z-50">
       <div class="flex flex-col items-center lg:items-start px-0 lg:px-6">
@@ -73,6 +76,12 @@
             @click="navigate(AppRoute.AI_TUTOR)" 
           />
           <NavItem 
+            :icon="CalendarCheck" 
+            label="每日一题" 
+            :active="currentRoute === AppRoute.DAILY_CHALLENGE" 
+            @click="navigate(AppRoute.DAILY_CHALLENGE)" 
+          />
+          <NavItem 
             :icon="Terminal" 
             label="代码演练" 
             :active="currentRoute === AppRoute.ARENA" 
@@ -105,6 +114,7 @@
             <template v-else-if="currentRoute === AppRoute.ARENA">每日代码挑战</template>
             <template v-else-if="currentRoute === AppRoute.NEWS">前端情报局</template>
             <template v-else-if="currentRoute === AppRoute.AI_TUTOR">AI 学习导师</template>
+            <template v-else-if="currentRoute === AppRoute.DAILY_CHALLENGE">每日前端挑战</template>
             <template v-else-if="currentRoute === AppRoute.LEARNING_PATH">个性化学习路线</template>
           </h2>
           <div class="flex items-center gap-4">
@@ -154,6 +164,10 @@
           <AITutor />
         </div>
 
+        <div v-if="currentRoute === AppRoute.DAILY_CHALLENGE" class="col-span-12 row-span-11 overflow-y-auto">
+          <DailyChallenge />
+        </div>
+
         <div v-if="currentRoute === AppRoute.LEARNING_PATH" class="col-span-12 row-span-11">
           <LearningPath />
         </div>
@@ -172,10 +186,12 @@ import CodingArena from './components/CodingArena.vue';
 import NewsFeed from './components/NewsFeed.vue';
 import Chat from './components/Chat.vue';
 import AITutor from './components/AITutor.vue';
+import DailyChallenge from './components/DailyChallenge.vue';
 import LearningPath from './components/LearningPath.vue';
 import { AppRoute } from './types';
 import { INITIAL_GRAPH_DATA } from './constants';
-import { LayoutGrid, Network, Terminal, Newspaper, Bot, Settings, LogOut, Target } from 'lucide-vue-next';
+import { LayoutGrid, Network, Terminal, Newspaper, Bot, CalendarCheck, Settings, LogOut } from 'lucide-vue-next';
+
 import { useAuth } from './services/authService';
 
 const currentRoute = ref<AppRoute>(AppRoute.LANDING);
@@ -183,7 +199,7 @@ const { user, isAuthenticated, logout, initializeAuth } = useAuth();
 
 const navigate = (route: AppRoute) => {
   // 保护需要认证的路由
-  const protectedRoutes = [AppRoute.DASHBOARD, AppRoute.GRAPH, AppRoute.ARENA, AppRoute.NEWS, AppRoute.AI_TUTOR, AppRoute.LEARNING_PATH];
+  const protectedRoutes = [AppRoute.DASHBOARD, AppRoute.GRAPH, AppRoute.ARENA, AppRoute.NEWS, AppRoute.AI_TUTOR, AppRoute.DAILY_CHALLENGE, AppRoute.LEARNING_PATH];
   
   if (protectedRoutes.includes(route) && !isAuthenticated.value) {
     // 如果尝试访问受保护的路由但未登录，跳转到登录页
@@ -209,13 +225,29 @@ const handleLogout = async () => {
 onMounted(async () => {
   await initializeAuth();
   
+  window.addEventListener('navigate-to', (event: any) => {
+    if (event.detail && event.detail.route) {
+      const routeMap: Record<string, AppRoute> = {
+        'dashboard': AppRoute.DASHBOARD,
+        'graph': AppRoute.GRAPH,
+        'ai-tutor': AppRoute.AI_TUTOR,
+        'daily-challenge': AppRoute.DAILY_CHALLENGE,
+        'arena': AppRoute.ARENA,
+        'news': AppRoute.NEWS
+      };
+      const targetRoute = routeMap[event.detail.route];
+      if (targetRoute) navigate(targetRoute);
+    }
+  });
+
   // 如果已登录且在首页，自动跳转到仪表盘
   if (isAuthenticated.value && currentRoute.value === AppRoute.LANDING) {
     navigate(AppRoute.DASHBOARD);
   }
   
   // 如果未登录但在受保护页面，跳转到首页
-  const protectedRoutes = [AppRoute.DASHBOARD, AppRoute.GRAPH, AppRoute.ARENA, AppRoute.NEWS, AppRoute.AI_TUTOR, AppRoute.LEARNING_PATH];
+  const protectedRoutes = [AppRoute.DASHBOARD, AppRoute.GRAPH, AppRoute.ARENA, AppRoute.NEWS, AppRoute.AI_TUTOR, AppRoute.DAILY_CHALLENGE, AppRoute.LEARNING_PATH];
+
   if (!isAuthenticated.value && protectedRoutes.includes(currentRoute.value)) {
     navigate(AppRoute.LANDING);
   }

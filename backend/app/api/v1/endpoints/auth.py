@@ -4,7 +4,7 @@ from sqlalchemy.orm import Session
 from datetime import datetime, timedelta
 from typing import Optional
 from jose import JWTError, jwt
-import bcrypt
+from passlib.context import CryptContext
 from pydantic import BaseModel, EmailStr
 
 from app.core.database import get_db
@@ -14,6 +14,7 @@ from app.models.models import User
 router = APIRouter()
 
 # 密码加密
+pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/api/v1/auth/login")
 
 # 请求模型

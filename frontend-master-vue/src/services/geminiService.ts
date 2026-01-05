@@ -5,28 +5,61 @@ let chatSession: any = null;
 // 配置项
 const USE_BACKEND = import.meta.env.VITE_USE_BACKEND_AI === 'true';
 const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000';
+const MODEL_NAME = import.meta.env.VITE_GEMINI_MODEL || 'gemini-1.5-flash';
 
 const getClient = (): GoogleGenerativeAI => {
-  const apiKey = import.meta.env.VITE_GEMINI_API_KEY || 'DEMO_KEY';
+  const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
+  if (!apiKey || apiKey === 'DEMO_KEY') {
+    throw new Error('缺少有效的 Gemini API Key，请在前端 .env 文件中配置 VITE_GEMINI_API_KEY。');
+  }
   return new GoogleGenerativeAI(apiKey);
 };
 
 export const initializeChat = async (systemInstruction: string = "你是一位资深的前端工程化导师。你的目标是帮助用户理解复杂概念，生成代码，并提供学习路径。请使用 Markdown 格式，并始终使用中文进行回答。"): Promise<void> => {
+  if (USE_BACKEND) {
+    chatSession = null;
+    return;
+  }
+
   try {
     const genAI = getClient();
     const model = genAI.getGenerativeModel({ 
-      model: 'gemini-2.0-flash-exp',
+      model: MODEL_NAME,
       systemInstruction
     });
     chatSession = model.startChat({
       history: [],
     });
   } catch (e) {
+    chatSession = null;
     console.error("Failed to initialize chat", e);
+    throw e;
   }
 };
 
 export const sendMessage = async (message: string): Promise<string> => {
+  if (USE_BACKEND) {
+    try {
+      const response = await fetch(`${API_BASE_URL}/api/v1/chat/message`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ message, history: [], use_rag: true })
+      });
+
+      if (!response.ok) {
+        throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+      }
+
+      const data = await response.json();
+      return data?.data?.message || 'AI 暂时没有回复，请稍后再试。';
+    } catch (error) {
+      console.error('Backend chat error:', error);
+      return error instanceof Error ? error.message : '连接后端 AI 服务失败，请稍后重试。';
+    }
+  }
+
   if (!chatSession) {
     await initializeChat();
   }
@@ -39,7 +72,7 @@ export const sendMessage = async (message: string): Promise<string> => {
     return response.text() || "我无法生成回复。";
   } catch (error) {
     console.error("Gemini Error:", error);
-    return "抱歉，连接知识库时出现错误。";
+    return error instanceof Error ? error.message : "抱歉，连接知识库时出现错误。";
   }
 };
 
@@ -111,7 +144,14 @@ export async function* sendMessageStream(message: string, history: Array<{role: 
   // 使用前端直连 Gemini
   else {
     if (!chatSession) {
-      await initializeChat();
+      try {
+        await initializeChat();
+      } catch (error) {
+        console.error("Gemini init error:", error);
+        const message = error instanceof Error ? error.message : 'AI 服务暂不可用，请检查您的 API Key 配置。';
+        yield message;
+        return;
+      }
     }
 
     if (!chatSession) {
@@ -130,7 +170,8 @@ export async function* sendMessageStream(message: string, history: Array<{role: 
       }
     } catch (error) {
       console.error("Gemini Error:", error);
-      yield "抱歉，连接知识库时出现错误。";
+      const message = error instanceof Error ? error.message : '抱歉，连接知识库时出现错误。';
+      yield message;
     }
   }
 }

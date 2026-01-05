@@ -15,6 +15,7 @@ class Settings(BaseSettings):
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 60 * 24 * 7  # 7 days
     
     # OpenAI API (使用环境变量中的 OPENAI_API_KEY)
+    OPENAI_API_BASE: Optional[str] = None
     OPENAI_API_KEY: Optional[str] = None
     OPENAI_API_BASE: Optional[str] = None
     OPENAI_MODEL: str = "Pro/deepseek-ai/DeepSeek-V3"
