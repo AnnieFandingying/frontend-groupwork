@@ -114,9 +114,10 @@ const fetchNews = async () => {
       params.append('source', selectedSource.value);
     }
     
-    console.log('请求新闻API:', `http://localhost:8000/api/v1/news?${params}`);
+    const API_BASE = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000';
+    console.log('请求新闻API:', `${API_BASE}/api/v1/news?${params}`);
     
-    const response = await fetch(`http://localhost:8000/api/v1/news?${params}`, {
+    const response = await fetch(`${API_BASE}/api/v1/news?${params}`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -161,7 +162,8 @@ const refreshNews = async () => {
   error.value = '';
   
   try {
-    const response = await fetch('http://localhost:8000/api/v1/news/crawl', {
+    const API_BASE = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000';
+    const response = await fetch(`${API_BASE}/api/v1/news/crawl`, {
       method: 'POST'
     });
     

@@ -1,48 +1,28 @@
-# General
-.DS_Store
-Thumbs.db
+# Logs
+logs
 *.log
-logs/
-*.tmp
-*.swp
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 
-# Node / Frontend
-node_modules/
-frontend-master-vue/node_modules/
-frontend-master-vue/dist/
-frontend-master-vue/.env.*
-frontend-master-vue/.vite
-
-# Python / Backend
-backend/venv/
-backend/.env.*
-backend/__pycache__/
-backend/**/*.pyc
-backend/.pytest_cache/
-backend/.coverage
-backend/coverage/
-
-# Data & caches
-backend/data/chroma/
-backend/data/**/*.sqlite3
-backend/app/utils/__pycache__/
-data/
-
-# Editor / OS
-.vscode/
-.idea/
-
-# Docker & Compose
-backend/.docker/
+node_modules
+dist
+dist-ssr
 *.local
 
-# Build outputs
-**/dist/
-**/build/
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
 
-# Test artifacts
-coverage/
-
-# Misc
-*.bak
-*.orig
+# Environment variables
+.env
+.env.local
