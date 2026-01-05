@@ -10,12 +10,11 @@ logs/
 node_modules/
 frontend-master-vue/node_modules/
 frontend-master-vue/dist/
-frontend-master-vue/.env.*
+frontend-master-vue/.env
 frontend-master-vue/.vite
 
 # Python / Backend
 backend/venv/
-backend/.env.*
 backend/__pycache__/
 backend/**/*.pyc
 backend/.pytest_cache/
@@ -25,8 +24,12 @@ backend/coverage/
 # Data & caches
 backend/data/chroma/
 backend/data/**/*.sqlite3
+backend/data/frontend_master.db
 backend/app/utils/__pycache__/
-data/
+
+# Important: Keep initial_news_data.json for first-time setup
+!backend/data/initial_news_data.json
+!backend/data/README.md
 
 # Editor / OS
 .vscode/
