@@ -1,4 +1,4 @@
-<template>
+﻿<template>
   <div class="flex flex-col h-full bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
     <!-- 新手引导遮罩 - SVG镂空透明实现 -->
     <transition name="fade">
@@ -119,12 +119,11 @@
           top: assistPanelPosition.y + 'px', 
           left: assistPanelPosition.x + 'px',
         }"
-        @mousedown.prevent="startDrag"
-      >
-        <!-- 气泡尾巴 - 动态方向 -->
-        <div 
-          :class="assistPanelPosition.tailDirection === 'top' ? 'bubble-tail-top' : 'bubble-tail-bottom'"
-          :style="{ left: assistPanelPosition.tailOffset + 'px' }"
+        >
+          <!-- 气泡尾巴 - 动态方向 -->
+          <div 
+            :class="assistPanelPosition.tailDirection === 'top' ? 'bubble-tail-top' : 'bubble-tail-bottom'"
+            :style="{ left: assistPanelPosition.tailOffset + 'px' }"
           ></div>
           
           <!-- 气泡主体 -->
@@ -502,8 +501,6 @@ const assistPanelPosition = ref({
   tailOffset: 32 // 尾巴相对于气泡左边缘的偏移
 });
 const bubbleWrapperRef = ref<HTMLDivElement | null>(null);
-const dragging = ref(false);
-const dragOffset = ref({ x: 0, y: 0 });
 const isAssisting = ref(false);
 const assistResult = ref('');
 const currentAction = ref<'explain' | 'complete' | 'fix'>('explain');
@@ -807,42 +804,6 @@ const handleChange = () => {
   }
 };
 
-// 精确计算 textarea 某个光标位置的屏幕坐标（使用镜像 div，不受缩放影响）
-const getCaretClientRect = (textarea: HTMLTextAreaElement, pos: number) => {
-  const style = window.getComputedStyle(textarea);
-  const taRect = textarea.getBoundingClientRect();
-
-  const div = document.createElement('div');
-  const span = document.createElement('span');
-
-  div.style.position = 'absolute';
-  div.style.visibility = 'hidden';
-  div.style.whiteSpace = 'pre-wrap';
-  div.style.wordWrap = 'break-word';
-  div.style.boxSizing = 'border-box';
-  div.style.left = `${taRect.left}px`;
-  div.style.top = `${taRect.top}px`;
-  div.style.width = `${taRect.width}px`;
-  div.style.padding = style.padding;
-  div.style.font = style.font;
-  div.style.lineHeight = style.lineHeight;
-  div.style.letterSpacing = style.letterSpacing;
-  div.style.border = style.border;
-  div.style.overflow = 'hidden';
-
-  div.textContent = textarea.value.substring(0, pos);
-  span.textContent = '\u200b'; // 占位符
-  div.appendChild(span);
-
-  document.body.appendChild(div);
-  div.scrollTop = textarea.scrollTop;
-  div.scrollLeft = textarea.scrollLeft;
-
-  const caretRect = span.getBoundingClientRect();
-  document.body.removeChild(div);
-  return caretRect;
-};
-
 // 处理文本选中
 const handleTextSelection = (event: Event) => {
   const textarea = event.target as HTMLTextAreaElement;
@@ -854,14 +815,49 @@ const handleTextSelection = (event: Event) => {
     if (selected.trim().length > 0) {
       selectedCode.value = selected;
       currentTextarea.value = textarea;
-      const rect = textarea.getBoundingClientRect();
       
-      // 精确获取末端光标位置（selectionEnd），使用镜像 div 计算
-      const caretRect = getCaretClientRect(textarea, selectionEnd);
-      const cursorX = caretRect.left;
-      const cursorY = caretRect.top + caretRect.height / 2;
-      const bottomCenterX = caretRect.left;
-      const bottomCenterY = caretRect.bottom;
+      // 计算悬浮按钮位置
+      const rect = textarea.getBoundingClientRect();
+      const textBeforeSelection = textarea.value.substring(0, selectionStart);
+      const textInSelection = textarea.value.substring(selectionStart, selectionEnd);
+      
+      // 计算选中文本的起始行和结束行
+      const linesBeforeSelection = textBeforeSelection.split('\n');
+      const linesInSelection = textInSelection.split('\n');
+      const startLine = linesBeforeSelection.length;
+      
+      // 计算选中区域的中心位置（用于尾巴指向）
+      const lineHeight = 20; // 假设行高为20px
+      const fontSize = 14; // 假设字体大小为14px
+      const charWidth = fontSize * 0.6; // 等宽字体大约是字体大小的0.6倍
+      
+      // 选中文本的起始行的字符位置
+      const startLineText = linesBeforeSelection[linesBeforeSelection.length - 1];
+      const startColChars = startLineText.length;
+      
+      // 计算选中区域的末端位置（用于尾巴指向）和底部位置（用于气泡定位）
+      let endLine, endLineText;
+      if (linesInSelection.length > 1) {
+        // 多行选中
+        endLine = startLine + linesInSelection.length - 1; // 选中区域的最后一行
+        endLineText = linesInSelection[linesInSelection.length - 1]; // 最后一行的文本
+      } else {
+        // 单行选中
+        endLine = startLine; // 单行时，结束行就是起始行
+        endLineText = linesInSelection[0]; // 选中的文本
+      }
+      
+      // 计算选区末端的光标位置（用于尾巴指向）
+      const padding = 24; // textarea 的 padding (p-6 = 24px)
+      const endColChars = linesInSelection.length > 1 
+        ? endLineText.length 
+        : startColChars + linesInSelection[0].length;
+      const cursorX = rect.left + padding + (endColChars * charWidth);
+      const cursorY = rect.top + padding + ((endLine - 1) * lineHeight) - textarea.scrollTop + (lineHeight / 2);
+      
+      // 计算选中区域底边的中心点坐标（用于气泡定位）
+      const bottomCenterX = cursorX;
+      const bottomCenterY = rect.top + padding + (endLine * lineHeight) - textarea.scrollTop;
       
       // 记录位置信息
       selectionCursorPosition.value = { 
@@ -949,22 +945,22 @@ const calculateBubblePosition = (size?: { width: number; height: number }) => {
   const bottomCenterX = selectionCursorPosition.value.bottomCenterX;
   const selectionBottomY = selectionCursorPosition.value.bottomY;
   
-  // 气泡尺寸：优先读取真实尺寸，无法读取时根据可用空间动态估算
-  const viewportWidth = window.innerWidth;
-  const viewportHeight = window.innerHeight;
-  const scrollY = window.scrollY || window.pageYOffset;
-
-  const selectionBottomViewportY = selectionBottomY - scrollY;
-  const baseAvailableBelow = viewportHeight - selectionBottomViewportY;
-
+  // 气泡尺寸：优先读取真实尺寸，无法读取时回退默认值
   const bubbleWidth = size?.width ?? 500;
-  const estimatedBelow = Math.max(180, baseAvailableBelow - 80);
-  const bubbleHeight = size?.height ?? Math.max(200, Math.min(estimatedBelow, viewportHeight * 0.6));
+  const bubbleHeight = size?.height ?? 320;
   const safePadding = 40; // 更大的安全边距
   const tailSpace = 12; // 尾巴与代码的间距
   const tailTipOffset = 14; // 尾巴高度（用于保证尖端在选区下方）
   const sideGap = 16; // 气泡水平间隙，避免紧贴代码
   const bottomBarHeight = 48; // 底部操作栏高度（h-12 = 48px）
+  
+  // 视口信息
+  const viewportWidth = window.innerWidth;
+  const viewportHeight = window.innerHeight;
+  const scrollY = window.scrollY || window.pageYOffset;
+  
+  // 计算选区底部在视口中的位置
+  const selectionBottomViewportY = selectionBottomY - scrollY;
   
   // 计算可用空间
   const spaceBelow = viewportHeight - selectionBottomViewportY - tailSpace - bottomBarHeight - safePadding;
@@ -1055,33 +1051,6 @@ const updateBubblePositionWithMeasure = () => {
   });
 };
 
-const startDrag = (e: MouseEvent) => {
-  if (!showAssistPanel.value) return;
-  dragging.value = true;
-  dragOffset.value = {
-    x: e.clientX - assistPanelPosition.value.x,
-    y: e.clientY - assistPanelPosition.value.y
-  };
-  window.addEventListener('mousemove', onDrag);
-  window.addEventListener('mouseup', endDrag);
-};
-
-const onDrag = (e: MouseEvent) => {
-  if (!dragging.value) return;
-  assistPanelPosition.value = {
-    ...assistPanelPosition.value,
-    x: e.clientX - dragOffset.value.x,
-    y: e.clientY - dragOffset.value.y
-  };
-};
-
-const endDrag = () => {
-  if (!dragging.value) return;
-  dragging.value = false;
-  window.removeEventListener('mousemove', onDrag);
-  window.removeEventListener('mouseup', endDrag);
-};
-
 // 执行 AI 辅助
 const executeAIAssist = async (action: 'explain' | 'complete' | 'fix') => {
   if (!selectedCode.value) return;
@@ -1115,13 +1084,11 @@ const executeAIAssist = async (action: 'explain' | 'complete' | 'fix') => {
     }
     
     isAssisting.value = false;
-    updateBubblePositionWithMeasure();
     
   } catch (error) {
     console.error('AI 辅助错误:', error);
     assistResult.value = `❌ AI 辅助服务出错: ${error}`;
     isAssisting.value = false;
-    updateBubblePositionWithMeasure();
   }
 };
 
@@ -1144,7 +1111,7 @@ const clearOutput = () => {
 const runCode = () => {
   try {
     consoleOutput.value = [];
-    addLog(` 开始执行代码... (${codeModeLabel.value})`, 'info');
+    addLog(`🚀 开始执行代码... (${codeModeLabel.value})`, 'info');
     
     if (!previewFrame.value) {
       addLog('❌ 预览框架未准备好', 'error');
@@ -1328,7 +1295,7 @@ const runCode = () => {
     doc.write(codeWithConsole);
     doc.close();
     
-    addLog(' 代码执行成功！', 'success');
+    addLog('✅ 代码执行成功！', 'success');
     
     // 添加粒子特效
     confetti({
@@ -1602,11 +1569,11 @@ const handleOverlayClick = () => {
 .guide-highlight-border {
   position: absolute;
   background: transparent;
-  border: 3px solid #FF8A3D;
+  border: 3px solid #FF6B9D;
   box-shadow: 
-    0 0 0 3px rgba(255, 138, 61, 0.2),
-    0 0 20px rgba(255, 138, 61, 0.4),
-    0 4px 15px rgba(255, 138, 61, 0.3);
+    0 0 0 3px rgba(255, 107, 157, 0.2),
+    0 0 20px rgba(255, 107, 157, 0.4),
+    0 4px 15px rgba(255, 107, 157, 0.3);
   transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
   pointer-events: none;
   z-index: 9999;
@@ -1624,19 +1591,19 @@ const handleOverlayClick = () => {
 @keyframes boxPulse {
   0%, 100% { 
     transform: scale(1);
-    border-color: #FF8A3D;
+    border-color: #FF6B9D;
     box-shadow: 
-      0 0 0 3px rgba(255, 138, 61, 0.2),
-      0 0 20px rgba(255, 138, 61, 0.4),
-      0 4px 15px rgba(255, 138, 61, 0.3);
+      0 0 0 3px rgba(255, 107, 157, 0.2),
+      0 0 20px rgba(255, 107, 157, 0.4),
+      0 4px 15px rgba(255, 107, 157, 0.3);
   }
   50% { 
     transform: scale(1.05);
-    border-color: #FFB164;
+    border-color: #FF8AB8;
     box-shadow: 
-      0 0 0 5px rgba(255, 138, 61, 0.3),
-      0 0 30px rgba(255, 138, 61, 0.6),
-      0 6px 25px rgba(255, 138, 61, 0.4);
+      0 0 0 5px rgba(255, 107, 157, 0.3),
+      0 0 30px rgba(255, 107, 157, 0.6),
+      0 6px 25px rgba(255, 107, 157, 0.4);
   }
 }
 
@@ -1704,9 +1671,9 @@ const handleOverlayClick = () => {
   font-size: 1rem;
   font-weight: 700;
   color: #ffffff;
-  background: linear-gradient(135deg, #FF8A3D 0%, #FFB26B 100%);
+  background: linear-gradient(135deg, #FF6B9D 0%, #FFA8C5 100%);
   box-shadow: 
-    0 6px 20px rgba(255, 138, 61, 0.4),
+    0 6px 20px rgba(255, 107, 157, 0.4),
     inset 0 -2px 6px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: all 0.3s ease;
@@ -1717,9 +1684,9 @@ const handleOverlayClick = () => {
 .bubble-btn:hover {
   transform: translateY(-3px) scale(1.05);
   box-shadow: 
-    0 10px 30px rgba(255, 138, 61, 0.5),
+    0 10px 30px rgba(255, 107, 157, 0.5),
     inset 0 -2px 6px rgba(0, 0, 0, 0.1);
-  background: linear-gradient(135deg, #FF9D52 0%, #FFC07A 100%);
+  background: linear-gradient(135deg, #FF8AB8 0%, #FFBDD5 100%);
 }
 
 .bubble-btn:active {
@@ -2025,7 +1992,6 @@ const handleOverlayClick = () => {
   filter: drop-shadow(0 20px 50px rgba(168, 181, 168, 0.2))
           drop-shadow(0 8px 20px rgba(157, 180, 192, 0.15));
   pointer-events: auto; /* 确保可以交互 */
-  cursor: grab;
 }
 
 @keyframes bubblePopIn {

@@ -46,6 +46,7 @@ export enum AppRoute {
   UNIVERSE = 'universe',
   NEWS = 'news',
   AI_TUTOR = 'ai-tutor',
+  LEARNING_PATH = 'learning-path',
 }
 
 export interface User {

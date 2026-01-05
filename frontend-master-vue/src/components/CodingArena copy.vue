@@ -1602,11 +1602,11 @@ const handleOverlayClick = () => {
 .guide-highlight-border {
   position: absolute;
   background: transparent;
-  border: 3px solid #FF8A3D;
+  border: 3px solid #FF6B9D;
   box-shadow: 
-    0 0 0 3px rgba(255, 138, 61, 0.2),
-    0 0 20px rgba(255, 138, 61, 0.4),
-    0 4px 15px rgba(255, 138, 61, 0.3);
+    0 0 0 3px rgba(255, 107, 157, 0.2),
+    0 0 20px rgba(255, 107, 157, 0.4),
+    0 4px 15px rgba(255, 107, 157, 0.3);
   transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
   pointer-events: none;
   z-index: 9999;
@@ -1624,19 +1624,19 @@ const handleOverlayClick = () => {
 @keyframes boxPulse {
   0%, 100% { 
     transform: scale(1);
-    border-color: #FF8A3D;
+    border-color: #FF6B9D;
     box-shadow: 
-      0 0 0 3px rgba(255, 138, 61, 0.2),
-      0 0 20px rgba(255, 138, 61, 0.4),
-      0 4px 15px rgba(255, 138, 61, 0.3);
+      0 0 0 3px rgba(255, 107, 157, 0.2),
+      0 0 20px rgba(255, 107, 157, 0.4),
+      0 4px 15px rgba(255, 107, 157, 0.3);
   }
   50% { 
     transform: scale(1.05);
-    border-color: #FFB164;
+    border-color: #FF8AB8;
     box-shadow: 
-      0 0 0 5px rgba(255, 138, 61, 0.3),
-      0 0 30px rgba(255, 138, 61, 0.6),
-      0 6px 25px rgba(255, 138, 61, 0.4);
+      0 0 0 5px rgba(255, 107, 157, 0.3),
+      0 0 30px rgba(255, 107, 157, 0.6),
+      0 6px 25px rgba(255, 107, 157, 0.4);
   }
 }
 
@@ -1704,9 +1704,9 @@ const handleOverlayClick = () => {
   font-size: 1rem;
   font-weight: 700;
   color: #ffffff;
-  background: linear-gradient(135deg, #FF8A3D 0%, #FFB26B 100%);
+  background: linear-gradient(135deg, #FF6B9D 0%, #FFA8C5 100%);
   box-shadow: 
-    0 6px 20px rgba(255, 138, 61, 0.4),
+    0 6px 20px rgba(255, 107, 157, 0.4),
     inset 0 -2px 6px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: all 0.3s ease;
@@ -1717,9 +1717,9 @@ const handleOverlayClick = () => {
 .bubble-btn:hover {
   transform: translateY(-3px) scale(1.05);
   box-shadow: 
-    0 10px 30px rgba(255, 138, 61, 0.5),
+    0 10px 30px rgba(255, 107, 157, 0.5),
     inset 0 -2px 6px rgba(0, 0, 0, 0.1);
-  background: linear-gradient(135deg, #FF9D52 0%, #FFC07A 100%);
+  background: linear-gradient(135deg, #FF8AB8 0%, #FFBDD5 100%);
 }
 
 .bubble-btn:active {
