@@ -44,8 +44,12 @@ def verify_password(plain_password: str, hashed_password: str) -> bool:
     return bcrypt.checkpw(plain_password.encode('utf-8'), hashed_password.encode('utf-8'))
 
 def get_password_hash(password: str) -> str:
-    """对密码进行哈希处理,限制密码长度为72字节"""
+    """对密码进行哈希处理,限制密码长度为72字节
+    注意：此处接收的password已经是前端SHA-256加密后的64位十六进制字符串
+    后端再使用bcrypt进行哈希存储，形成双重加密
+    """
     # bcrypt 只能处理最多 72 字节的密码
+    # 前端传来的已经是64位十六进制字符串，直接使用即可
     password_bytes = password.encode('utf-8')[:72]
     salt = bcrypt.gensalt()
     hashed = bcrypt.hashpw(password_bytes, salt)

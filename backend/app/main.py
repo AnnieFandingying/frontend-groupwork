@@ -3,13 +3,14 @@ from fastapi.middleware.cors import CORSMiddleware
 from contextlib import asynccontextmanager
 
 from .core.config import settings
-from .core.database import engine, Base
+from .core.database import engine, Base, SessionLocal
 from .models.models import *
 from .api.v1.endpoints.chat import router as chat_router
 from .api.v1.endpoints.news import router as news_router
 from .api.v1.endpoints.auth import router as auth_router
 from .services.rag_service import rag_service
 from .services.scheduler import start_scheduler, stop_scheduler
+from .services.initial_data_loader import load_initial_news_data
 
 
 @asynccontextmanager
@@ -20,6 +21,18 @@ async def lifespan(app: FastAPI):
     # 创建数据库表
     Base.metadata.create_all(bind=engine)
     print("✅ 数据库表创建完成")
+    
+    # 加载初始新闻数据（如果数据库为空）
+    try:
+        db = SessionLocal()
+        result = load_initial_news_data(db)
+        if result['loaded'] > 0:
+            print(f"✅ 加载初始新闻数据: {result['loaded']} 条")
+        elif result.get('skipped'):
+            print(f"ℹ️  {result['message']}")
+        db.close()
+    except Exception as e:
+        print(f"⚠️  初始数据加载失败: {e}")
     
     # 初始化 RAG 知识库
     try:

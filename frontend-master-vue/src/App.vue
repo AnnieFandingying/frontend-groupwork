@@ -122,7 +122,6 @@
         <template v-if="currentRoute === AppRoute.DASHBOARD">
           <div class="col-span-12 lg:col-span-8 row-span-7">
             <KnowledgeGraph 
-              :data="INITIAL_GRAPH_DATA" 
               :onMaximize="() => navigate(AppRoute.GRAPH)"
             />
           </div>
@@ -140,7 +139,7 @@
         </template>
 
         <div v-if="currentRoute === AppRoute.GRAPH" class="col-span-12 row-span-11">
-          <KnowledgeGraph :data="INITIAL_GRAPH_DATA" />
+          <KnowledgeGraph />
         </div>
 
         <div v-if="currentRoute === AppRoute.ARENA" class="col-span-12 row-span-11">
