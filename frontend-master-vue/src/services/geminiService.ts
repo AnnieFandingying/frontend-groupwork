@@ -2,10 +2,16 @@ import { GoogleGenerativeAI } from '@google/generative-ai';
 
 let chatSession: any = null;
 
-// 配置项
-const USE_BACKEND = import.meta.env.VITE_USE_BACKEND_AI === 'true';
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000';
-const MODEL_NAME = import.meta.env.VITE_GEMINI_MODEL || 'gemini-1.5-flash';
+// // 配置项
+// const USE_BACKEND = import.meta.env.VITE_USE_BACKEND_AI === 'true';
+// const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000';
+// const MODEL_NAME = import.meta.env.VITE_GEMINI_MODEL || 'gemini-1.5-flash';
+
+// SiliconFlow OpenAI 兼容配置
+const USE_OPENAI = import.meta.env.VITE_OPENAI_API_KEY ? true : false;
+const OPENAI_API_BASE = import.meta.env.VITE_OPENAI_API_BASE || 'https://api.siliconflow.cn/v1';
+const OPENAI_API_KEY = import.meta.env.VITE_OPENAI_API_KEY;
+const OPENAI_MODEL = import.meta.env.VITE_OPENAI_MODEL || 'Pro/deepseek-ai/DeepSeek-V3';
 
 const getClient = (): GoogleGenerativeAI => {
   const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
@@ -34,6 +40,86 @@ export const initializeChat = async (systemInstruction: string = "你是一位�
     chatSession = null;
     console.error("Failed to initialize chat", e);
     throw e;
+  }
+};
+
+// OpenAI 兼容 API 调用函数
+const callOpenAIStream = async function*(message: string, history: Array<{role: string, content: string}> = []) {
+  try {
+    if (!OPENAI_API_KEY) {
+      throw new Error('缺少 VITE_OPENAI_API_KEY 环境变量');
+    }
+
+    const messages = [
+      ...history.map(msg => ({
+        role: msg.role as 'user' | 'assistant',
+        content: msg.content
+      })),
+      { role: 'user' as const, content: message }
+    ];
+
+    const response = await fetch(`${OPENAI_API_BASE}/chat/completions`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${OPENAI_API_KEY}`
+      },
+      body: JSON.stringify({
+        model: OPENAI_MODEL,
+        messages,
+        temperature: 0.7,
+        top_p: 0.9,
+        max_tokens: 2000,
+        stream: true
+      })
+    });
+
+    if (!response.ok) {
+      throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+    }
+
+    const reader = response.body?.getReader();
+    if (!reader) {
+      throw new Error('无法读取响应流');
+    }
+
+    const decoder = new TextDecoder();
+    let buffer = '';
+
+    try {
+      while (true) {
+        const { done, value } = await reader.read();
+        if (done) break;
+
+        buffer += decoder.decode(value, { stream: true });
+        const lines = buffer.split('\n');
+        buffer = lines.pop() || '';
+
+        for (const line of lines) {
+          const trimmedLine = line.trim();
+          if (trimmedLine.startsWith('data: ')) {
+            const dataStr = trimmedLine.slice(6);
+            if (dataStr === '[DONE]') {
+              return;
+            }
+            try {
+              const data = JSON.parse(dataStr);
+              const content = data.choices?.[0]?.delta?.content || '';
+              if (content) {
+                yield content;
+              }
+            } catch (e) {
+              console.warn('解析流数据失败:', e);
+            }
+          }
+        }
+      }
+    } finally {
+      reader.releaseLock();
+    }
+  } catch (error) {
+    console.error("OpenAI API Error:", error);
+    throw error;
   }
 };
 
@@ -77,6 +163,17 @@ export const sendMessage = async (message: string): Promise<string> => {
 };
 
 export async function* sendMessageStream(message: string, history: Array<{role: string, content: string}> = []): AsyncGenerator<string, void, unknown> {
+  // 使用 OpenAI 兼容 API（优先级最高）
+  if (USE_OPENAI) {
+    try {
+      yield* callOpenAIStream(message, history);
+    } catch (error) {
+      console.error("OpenAI stream error:", error);
+      yield `OpenAI 服务出错: ${error instanceof Error ? error.message : '未知错误'}`;
+    }
+    return;
+  }
+
   // 使用后端 API
   if (USE_BACKEND) {
     try {
