@@ -5,11 +5,13 @@ export interface Node {
   description?: string;
   mastery?: number; // 0-100
   val?: number; // for d3 visualization size
+  level?: 'beginner' | 'intermediate' | 'advanced'; // 难度级别
 }
 
 export interface Link {
   source: string;
   target: string;
+  type?: 'foundation' | 'ecosystem' | 'dependency' | 'category' | 'application';
 }
 
 export interface GraphData {
@@ -45,6 +47,7 @@ export enum AppRoute {
   NEWS = 'news',
   AI_TUTOR = 'ai-tutor',
   DAILY_CHALLENGE = 'daily-challenge',
+  LEARNING_PATH = 'learning-path',
 }
 
 export interface User {

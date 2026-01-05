@@ -1,0 +1,8487 @@
+{
+  "beginner": {
+    "nodes": [
+      {
+        "id": "Frontend_Basic",
+        "label": "前端基础",
+        "group": "foundation",
+        "val": 11,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "Client",
+        "label": "客户端",
+        "group": "core",
+        "val": 9,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "Browser",
+        "label": "浏览器",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "Chrome",
+        "label": "Chrome",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "Safari",
+        "label": "Safari",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "Firefox",
+        "label": "Firefox",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "APP",
+        "label": "APP",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "小程序",
+        "label": "小程序",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "WebView",
+        "label": "WebView",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "网络",
+        "label": "网络",
+        "group": "core",
+        "val": 9,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "Domain",
+        "label": "Domain",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "TCP_IP",
+        "label": "TCP/IP",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "DNS",
+        "label": "DNS",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "HTTP",
+        "label": "HTTP",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "服务端",
+        "label": "服务端",
+        "group": "core",
+        "val": 9,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "WebServer",
+        "label": "WebServer",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "Nginx",
+        "label": "Nginx",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "Apache_HTTP_Server",
+        "label": "Apache HTTP Server",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "CDN",
+        "label": "CDN",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "服务端语言",
+        "label": "服务端语言",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "PHP",
+        "label": "PHP",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "Java",
+        "label": "Java",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "Golang",
+        "label": "Golang",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "数据库",
+        "label": "数据库",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "操作系统",
+        "label": "操作系统",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "行业标准",
+        "label": "行业标准",
+        "group": "core",
+        "val": 9,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "W3C_WHATWG",
+        "label": "W3C/WHATWG",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "CSS标准",
+        "label": "CSS标准",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "HTML、XHTML、XML、HTML5标准",
+        "label": "HTML、XHTML、XML、HTML5标准",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "DOM标准",
+        "label": "DOM标准",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "SVG标准",
+        "label": "SVG标准",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "小程序标准",
+        "label": "小程序标准",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "ECMA-TC39",
+        "label": "ECMA-TC39",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "ECMAScript标准",
+        "label": "ECMAScript标准",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "研发工具",
+        "label": "研发工具",
+        "group": "foundation",
+        "val": 11,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "JavaScript标准",
+        "label": "JavaScript标准",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "编辑器",
+        "label": "编辑器",
+        "group": "core",
+        "val": 9,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "Atom",
+        "label": "Atom",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "Visual_Studio_Code",
+        "label": "Visual Studio Code",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "Webstorm",
+        "label": "Webstorm",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "调试预览",
+        "label": "调试预览",
+        "group": "core",
+        "val": 9,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "浏览器调试工具",
+        "label": "浏览器调试工具",
+        "group": "tool",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "FireBug",
+        "label": "FireBug",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "Chrome_DevTools",
+        "label": "Chrome DevTools",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "在线服务",
+        "label": "在线服务",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "CodePen",
+        "label": "CodePen",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "JSFiddle",
+        "label": "JSFiddle",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "图片编辑器",
+        "label": "图片编辑器",
+        "group": "core",
+        "val": 9,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "PhotoShop",
+        "label": "PhotoShop",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "Sketch",
+        "label": "Sketch",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "版本管理",
+        "label": "版本管理",
+        "group": "core",
+        "val": 9,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "Git",
+        "label": "Git",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "SVN",
+        "label": "SVN",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "HTML",
+        "label": "HTML",
+        "group": "foundation",
+        "val": 11,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "元素",
+        "label": "元素",
+        "group": "core",
+        "val": 9,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "根元素",
+        "label": "根元素",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "主根元素html",
+        "label": "主根元素html",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "分区根元素body",
+        "label": "分区根元素body",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "元数据",
+        "label": "元数据",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "base",
+        "label": "base",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "head",
+        "label": "head",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "title",
+        "label": "title",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "meta",
+        "label": "meta",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "link",
+        "label": "link",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "style",
+        "label": "style",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "内容分区",
+        "label": "内容分区",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "header",
+        "label": "header",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "footer",
+        "label": "footer",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "p",
+        "label": "p",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "注释",
+        "label": "注释",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "article",
+        "label": "article",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "nav",
+        "label": "nav",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "section",
+        "label": "section",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "address",
+        "label": "address",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "内容",
+        "label": "内容",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "块级内容_div、dir",
+        "label": "块级内容 div、dir",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "文字内容_a、b、strong",
+        "label": "文字内容 a、b、strong",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "图片和多媒体",
+        "label": "图片和多媒体",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "video",
+        "label": "video",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "img",
+        "label": "img",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "figure",
+        "label": "figure",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "audio",
+        "label": "audio",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "内嵌内容",
+        "label": "内嵌内容",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "object",
+        "label": "object",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "iframe",
+        "label": "iframe",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "脚本",
+        "label": "脚本",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "script",
+        "label": "script",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "noscript",
+        "label": "noscript",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "canvas",
+        "label": "canvas",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "表格",
+        "label": "表格",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "tbody",
+        "label": "tbody",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "table",
+        "label": "table",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "表单",
+        "label": "表单",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "input",
+        "label": "input",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "textarea",
+        "label": "textarea",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "form",
+        "label": "form",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "button",
+        "label": "button",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "可交互元素",
+        "label": "可交互元素",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "menuitem",
+        "label": "menuitem",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "menu",
+        "label": "menu",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "内联文本语义",
+        "label": "内联文本语义",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "a",
+        "label": "a",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "abbr",
+        "label": "abbr",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "b",
+        "label": "b",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "br",
+        "label": "br",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "cite",
+        "label": "cite",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "code",
+        "label": "code",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "dfn",
+        "label": "dfn",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "em",
+        "label": "em",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "i",
+        "label": "i",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "kbd",
+        "label": "kbd",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "mark",
+        "label": "mark",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "q",
+        "label": "q",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "s",
+        "label": "s",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "samp",
+        "label": "samp",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "small",
+        "label": "small",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "span",
+        "label": "span",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "strong",
+        "label": "strong",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "sub",
+        "label": "sub",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "sup",
+        "label": "sup",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "u",
+        "label": "u",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "var",
+        "label": "var",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "属性",
+        "label": "属性",
+        "group": "core",
+        "val": 9,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "常用属性",
+        "label": "常用属性",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "class",
+        "label": "class",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "id",
+        "label": "id",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "全局属性",
+        "label": "全局属性",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "accesskey",
+        "label": "accesskey",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "contenteditable",
+        "label": "contenteditable",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "dir",
+        "label": "dir",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "draggable",
+        "label": "draggable",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "hidden",
+        "label": "hidden",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "lang",
+        "label": "lang",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "spellcheck",
+        "label": "spellcheck",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "tabindex",
+        "label": "tabindex",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "translate",
+        "label": "translate",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "事件",
+        "label": "事件",
+        "group": "core",
+        "val": 9,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "窗口事件",
+        "label": "窗口事件",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "load",
+        "label": "load",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "unload",
+        "label": "unload",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "resize",
+        "label": "resize",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "scroll",
+        "label": "scroll",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "表单事件",
+        "label": "表单事件",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "submit",
+        "label": "submit",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "reset",
+        "label": "reset",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "change",
+        "label": "change",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "focus",
+        "label": "focus",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "blur",
+        "label": "blur",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "键盘事件",
+        "label": "键盘事件",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "keydown",
+        "label": "keydown",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "keyup",
+        "label": "keyup",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "keypress",
+        "label": "keypress",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "鼠标事件",
+        "label": "鼠标事件",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "click",
+        "label": "click",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "dblclick",
+        "label": "dblclick",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "mousedown",
+        "label": "mousedown",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "mouseup",
+        "label": "mouseup",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "mousemove",
+        "label": "mousemove",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "mouseover",
+        "label": "mouseover",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "mouseout",
+        "label": "mouseout",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "多媒体事件",
+        "label": "多媒体事件",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "play",
+        "label": "play",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "pause",
+        "label": "pause",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "ended",
+        "label": "ended",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "volumechange",
+        "label": "volumechange",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "CSS",
+        "label": "CSS",
+        "group": "foundation",
+        "val": 11,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "语法",
+        "label": "语法",
+        "group": "core",
+        "val": 9,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "@规则",
+        "label": "@规则",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "@import",
+        "label": "@import",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "@charset",
+        "label": "@charset",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "@media",
+        "label": "@media",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "@supports",
+        "label": "@supports",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "@keyframes",
+        "label": "@keyframes",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "@document",
+        "label": "@document",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "层叠",
+        "label": "层叠",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "层叠规则",
+        "label": "层叠规则",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "继承机制",
+        "label": "继承机制",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "特异性计算",
+        "label": "特异性计算",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "解释器",
+        "label": "解释器",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "继承",
+        "label": "继承",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "简写",
+        "label": "简写",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "优先级",
+        "label": "优先级",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "值定义",
+        "label": "值定义",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "关键字",
+        "label": "关键字",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "数值",
+        "label": "数值",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "长度",
+        "label": "长度",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "百分比",
+        "label": "百分比",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "颜色",
+        "label": "颜色",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "函数",
+        "label": "函数",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "单位与取值类型",
+        "label": "单位与取值类型",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "绝对单位（px_in_cm）",
+        "label": "绝对单位（px/in/cm）",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "相对单位（em_rem_%_vw_vh）",
+        "label": "相对单位（em/rem/%/vw/vh）",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "角度（deg_rad）",
+        "label": "角度（deg/rad）",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "时间（s_ms）",
+        "label": "时间（s/ms）",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "选择器",
+        "label": "选择器",
+        "group": "core",
+        "val": 9,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "基础选择器",
+        "label": "基础选择器",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "元素选择器",
+        "label": "元素选择器",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "类选择器",
+        "label": "类选择器",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "ID选择器",
+        "label": "ID选择器",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "通配选择器",
+        "label": "通配选择器",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "组合选择器",
+        "label": "组合选择器",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "后代选择器",
+        "label": "后代选择器",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "子选择器",
+        "label": "子选择器",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "相邻兄弟选择器",
+        "label": "相邻兄弟选择器",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "通用兄弟选择器",
+        "label": "通用兄弟选择器",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "伪类选择器",
+        "label": "伪类选择器",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "结构伪类（:nth-child）",
+        "label": "结构伪类（:nth-child）",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "状态伪类（:hover_:focus）",
+        "label": "状态伪类（:hover/:focus）",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "目标伪类（:target）",
+        "label": "目标伪类（:target）",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "伪元素选择器",
+        "label": "伪元素选择器",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "::before_::after",
+        "label": "::before/::after",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "::first-letter_::first-line",
+        "label": "::first-letter/::first-line",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "核心属性",
+        "label": "核心属性",
+        "group": "core",
+        "val": 9,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "布局属性",
+        "label": "布局属性",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "display（block_inline-flex_grid）",
+        "label": "display（block/inline-flex/grid）",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "position（static_relative_absolute）",
+        "label": "position（static/relative/absolute）",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "float_clear",
+        "label": "float/clear",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "盒模型",
+        "label": "盒模型",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "width_height",
+        "label": "width/height",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "padding",
+        "label": "padding",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "border",
+        "label": "border",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "margin",
+        "label": "margin",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "box-sizing（content-box_border-box）",
+        "label": "box-sizing（content-box/border-box）",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "视觉格式化",
+        "label": "视觉格式化",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "正常流",
+        "label": "正常流",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "弹性盒子",
+        "label": "弹性盒子",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "网格布局",
+        "label": "网格布局",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "多列布局",
+        "label": "多列布局",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "高级布局",
+        "label": "高级布局",
+        "group": "core",
+        "val": 9,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "Flexbox布局",
+        "label": "Flexbox布局",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "弹性容器属性（flex-direction_justify-content）",
+        "label": "弹性容器属性（flex-direction/justify-content）",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "弹性项目属性（flex-grow_flex-shrink）",
+        "label": "弹性项目属性（flex-grow/flex-shrink）",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "Grid布局",
+        "label": "Grid布局",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "网格容器（grid-template-columns）",
+        "label": "网格容器（grid-template-columns）",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "网格项（grid-column-start_end）",
+        "label": "网格项（grid-column-start/end）",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "column-count",
+        "label": "column-count",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "column-gap",
+        "label": "column-gap",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "break-inside",
+        "label": "break-inside",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "视觉样式",
+        "label": "视觉样式",
+        "group": "core",
+        "val": 9,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "背景与边框",
+        "label": "背景与边框",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "background-image_clip_origin",
+        "label": "background-image/clip/origin",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "border-radius",
+        "label": "border-radius",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "box-shadow",
+        "label": "box-shadow",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "文本样式",
+        "label": "文本样式",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "font-family_size_weight",
+        "label": "font-family/size/weight",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "line-height",
+        "label": "line-height",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "text-align",
+        "label": "text-align",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "text-shadow",
+        "label": "text-shadow",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "列表与表格",
+        "label": "列表与表格",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "list-style-type",
+        "label": "list-style-type",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "table-layout",
+        "label": "table-layout",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "border-collapse",
+        "label": "border-collapse",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "动态效果",
+        "label": "动态效果",
+        "group": "core",
+        "val": 9,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "过渡效果",
+        "label": "过渡效果",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "transition-property_duration_timing-function",
+        "label": "transition-property/duration/timing-function",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "变形操作",
+        "label": "变形操作",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "transform（translate_scale_rotate）",
+        "label": "transform（translate/scale/rotate）",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "transform-origin",
+        "label": "transform-origin",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "动画控制",
+        "label": "动画控制",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "@keyframes、animation-fill-mode_direction",
+        "label": "@keyframes、animation-fill-mode/direction",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "响应式设计",
+        "label": "响应式设计",
+        "group": "core",
+        "val": 9,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "媒体查询",
+        "label": "媒体查询",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "@media_(max-width)",
+        "label": "@media (max-width)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "设备方向（orientation）",
+        "label": "设备方向（orientation）",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "分辨率（resolution）",
+        "label": "分辨率（resolution）",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "视口控制",
+        "label": "视口控制",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "viewport_meta标签",
+        "label": "viewport meta标签",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "vw_vh单位",
+        "label": "vw/vh单位",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "rem_em单位",
+        "label": "rem/em单位",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "性能优化",
+        "label": "性能优化",
+        "group": "core",
+        "val": 9,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "渲染性能",
+        "label": "渲染性能",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "repaint_reflow优化",
+        "label": "repaint/reflow优化",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "CSS_containment",
+        "label": "CSS containment",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "资源加载",
+        "label": "资源加载",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "链接方式（link_import）",
+        "label": "链接方式（link/import）",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "预加载",
+        "label": "预加载",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "懒加载",
+        "label": "懒加载",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "JavaScript",
+        "label": "JavaScript",
+        "group": "foundation",
+        "val": 11,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "基础语法",
+        "label": "基础语法",
+        "group": "core",
+        "val": 9,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "变量",
+        "label": "变量",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "引用值",
+        "label": "引用值",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "原始值",
+        "label": "原始值",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "声明",
+        "label": "声明",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "let",
+        "label": "let",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "const",
+        "label": "const",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "数据类型",
+        "label": "数据类型",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "基本类型",
+        "label": "基本类型",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "String",
+        "label": "String",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "Number",
+        "label": "Number",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "Boolean",
+        "label": "Boolean",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "Null",
+        "label": "Null",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "Undefined",
+        "label": "Undefined",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "Symbol_(唯一值)",
+        "label": "Symbol (唯一值)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "BigInt",
+        "label": "BigInt",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "引用类型",
+        "label": "引用类型",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "类型检测",
+        "label": "类型检测",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "类型转换_(显式与隐式)",
+        "label": "类型转换 (显式与隐式)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "运算符",
+        "label": "运算符",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "算术、赋值、比较、逻辑",
+        "label": "算术、赋值、比较、逻辑",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "位运算符",
+        "label": "位运算符",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "三元运算符",
+        "label": "三元运算符",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "流程控制",
+        "label": "流程控制",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "if___else,_switch",
+        "label": "if...else, switch",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "for,_while,_do___while",
+        "label": "for, while, do...while",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "for___in_(遍历键)",
+        "label": "for...in (遍历键)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "for___of_(遍历值_-_需可迭代)",
+        "label": "for...of (遍历值 - 需可迭代)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "函数声明",
+        "label": "函数声明",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "函数表达式",
+        "label": "函数表达式",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "箭头函数",
+        "label": "箭头函数",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "参数",
+        "label": "参数",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "arguments_对象",
+        "label": "arguments 对象",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "Rest_参数_(___)",
+        "label": "Rest 参数 (...)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "Spread_运算符_(___)",
+        "label": "Spread 运算符 (...)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "默认参数",
+        "label": "默认参数",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "作用域与闭包",
+        "label": "作用域与闭包",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "全局、函数、块级作用域",
+        "label": "全局、函数、块级作用域",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "词法作用域",
+        "label": "词法作用域",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "闭包",
+        "label": "闭包",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "执行上下文与调用栈",
+        "label": "执行上下文与调用栈",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "`this`_关键字",
+        "label": "`this` 关键字",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "全局上下文",
+        "label": "全局上下文",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "函数调用",
+        "label": "函数调用",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "方法调用",
+        "label": "方法调用",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "构造函数调用",
+        "label": "构造函数调用",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "call,_apply,_bind_(显式绑定)",
+        "label": "call, apply, bind (显式绑定)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "高阶函数",
+        "label": "高阶函数",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "柯里化_(Currying)",
+        "label": "柯里化 (Currying)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "函数组合_(Composition)",
+        "label": "函数组合 (Composition)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "数据结构与内置对象",
+        "label": "数据结构与内置对象",
+        "group": "core",
+        "val": 9,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "Object",
+        "label": "Object",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "属性描述符_(Property_Descriptors)",
+        "label": "属性描述符 (Property Descriptors)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "getters___setters",
+        "label": "getters / setters",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "Object_keys,_values,_entries",
+        "label": "Object.keys, values, entries",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "Object_create,_Object_assign",
+        "label": "Object.create, Object.assign",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "Array",
+        "label": "Array",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "常用方法_(map,_filter,_reduce,_find)",
+        "label": "常用方法 (map, filter, reduce, find)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "splice,_slice",
+        "label": "splice, slice",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "push,_pop,_shift,_unshift",
+        "label": "push, pop, shift, unshift",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "Array_from,_Array_of",
+        "label": "Array.from, Array.of",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "String_(常用方法)",
+        "label": "String (常用方法)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "Map___Set",
+        "label": "Map / Set",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "WeakMap___WeakSet",
+        "label": "WeakMap / WeakSet",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "弱引用",
+        "label": "弱引用",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "垃圾回收",
+        "label": "垃圾回收",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "标记清理",
+        "label": "标记清理",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "引用计数",
+        "label": "引用计数",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "JSON",
+        "label": "JSON",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "JSON.stringify",
+        "label": "JSON.stringify",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "JSON.parse",
+        "label": "JSON.parse",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "Date",
+        "label": "Date",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "解构赋值",
+        "label": "解构赋值",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "数组解构",
+        "label": "数组解构",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "对象解构",
+        "label": "对象解构",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "模块化",
+        "label": "模块化",
+        "group": "core",
+        "val": 9,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "ES_Modules",
+        "label": "ES Modules",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "`import`",
+        "label": "`import`",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "`export`___`export_default`",
+        "label": "`export` / `export default`",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "动态导入_`import()`",
+        "label": "动态导入 `import()`",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "CommonJS_(Node_js)",
+        "label": "CommonJS (Node.js)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "`require()`",
+        "label": "`require()`",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "`module_exports`___`exports`",
+        "label": "`module.exports` / `exports`",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "AMD___UMD_(历史)",
+        "label": "AMD / UMD (历史)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "错误处理_(Error_Handling)",
+        "label": "错误处理 (Error Handling)",
+        "group": "core",
+        "val": 9,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "异常",
+        "label": "异常",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "捕获",
+        "label": "捕获",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "扩展异常",
+        "label": "扩展异常",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "全局捕获",
+        "label": "全局捕获",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "同步捕获",
+        "label": "同步捕获",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "异步捕获",
+        "label": "异步捕获",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "抛出",
+        "label": "抛出",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "Error_对象",
+        "label": "Error 对象",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "SyntaxError,_TypeError,_ReferenceError___",
+        "label": "SyntaxError, TypeError, ReferenceError...",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "DOM",
+        "label": "DOM",
+        "group": "core",
+        "val": 9,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "DOM_Tree",
+        "label": "DOM Tree",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "DOM_Node",
+        "label": "DOM Node",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "DOM_Query",
+        "label": "DOM Query",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "DOM_Properties",
+        "label": "DOM Properties",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "DOM_Modify",
+        "label": "DOM Modify",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "Styles",
+        "label": "Styles",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "Coordinates、Element_Scrolling",
+        "label": "Coordinates、Element Scrolling",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "DOM_Events",
+        "label": "DOM Events",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "UI_Event",
+        "label": "UI Event",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "浏览器API",
+        "label": "浏览器API",
+        "group": "core",
+        "val": 9,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "location",
+        "label": "location",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "history",
+        "label": "history",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "navigator",
+        "label": "navigator",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "Default_Actions",
+        "label": "Default Actions",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "event_preventDefault()",
+        "label": "event.preventDefault()",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "Form",
+        "label": "Form",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "change\\focus\\blur\\submit",
+        "label": "change\\focus\\blur\\submit",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "XHR",
+        "label": "XHR",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "Fetch",
+        "label": "Fetch",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "JSONP",
+        "label": "JSONP",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "WebSocket",
+        "label": "WebSocket",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "权限",
+        "label": "权限",
+        "group": "core",
+        "val": 9,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "Cookie",
+        "label": "Cookie",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "Session",
+        "label": "Session",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "OAuth",
+        "label": "OAuth",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "SSO",
+        "label": "SSO",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "JWT",
+        "label": "JWT",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "安全与隐私",
+        "label": "安全与隐私",
+        "group": "core",
+        "val": 9,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "Content_Security_Policy（CSP）",
+        "label": "Content Security Policy（CSP）",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "CORS",
+        "label": "CORS",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "SQL_注入",
+        "label": "SQL 注入",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "XSS",
+        "label": "XSS",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "CSRF",
+        "label": "CSRF",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "MITM",
+        "label": "MITM",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "Samesite",
+        "label": "Samesite",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "开发者工具",
+        "label": "开发者工具",
+        "group": "tool",
+        "val": 9,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "设备模式",
+        "label": "设备模式",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "元素面板",
+        "label": "元素面板",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "控制台面板",
+        "label": "控制台面板",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "源代码面板",
+        "label": "源代码面板",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "网络面板",
+        "label": "网络面板",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "性能面板",
+        "label": "性能面板",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "内存面板",
+        "label": "内存面板",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "应用面板",
+        "label": "应用面板",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "安全面板",
+        "label": "安全面板",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "beginner"
+      },
+      {
+        "id": "Vue",
+        "label": "Vue.js",
+        "group": "foundation",
+        "val": 11,
+        "mastery": 0,
+        "level": "beginner"
+      }
+    ],
+    "links": [
+      {
+        "source": "Frontend_Basic",
+        "target": "Client",
+        "type": "category"
+      },
+      {
+        "source": "Client",
+        "target": "Browser",
+        "type": "category"
+      },
+      {
+        "source": "Browser",
+        "target": "Chrome",
+        "type": "category"
+      },
+      {
+        "source": "Browser",
+        "target": "Safari",
+        "type": "category"
+      },
+      {
+        "source": "Browser",
+        "target": "Firefox",
+        "type": "category"
+      },
+      {
+        "source": "Client",
+        "target": "APP",
+        "type": "category"
+      },
+      {
+        "source": "APP",
+        "target": "小程序",
+        "type": "category"
+      },
+      {
+        "source": "APP",
+        "target": "WebView",
+        "type": "category"
+      },
+      {
+        "source": "Frontend_Basic",
+        "target": "网络",
+        "type": "category"
+      },
+      {
+        "source": "网络",
+        "target": "Domain",
+        "type": "category"
+      },
+      {
+        "source": "网络",
+        "target": "TCP_IP",
+        "type": "category"
+      },
+      {
+        "source": "网络",
+        "target": "DNS",
+        "type": "category"
+      },
+      {
+        "source": "网络",
+        "target": "HTTP",
+        "type": "category"
+      },
+      {
+        "source": "Frontend_Basic",
+        "target": "服务端",
+        "type": "category"
+      },
+      {
+        "source": "服务端",
+        "target": "WebServer",
+        "type": "category"
+      },
+      {
+        "source": "WebServer",
+        "target": "Nginx",
+        "type": "category"
+      },
+      {
+        "source": "WebServer",
+        "target": "Apache_HTTP_Server",
+        "type": "category"
+      },
+      {
+        "source": "WebServer",
+        "target": "CDN",
+        "type": "category"
+      },
+      {
+        "source": "服务端",
+        "target": "服务端语言",
+        "type": "category"
+      },
+      {
+        "source": "服务端语言",
+        "target": "PHP",
+        "type": "category"
+      },
+      {
+        "source": "服务端语言",
+        "target": "Java",
+        "type": "category"
+      },
+      {
+        "source": "服务端语言",
+        "target": "Golang",
+        "type": "category"
+      },
+      {
+        "source": "服务端",
+        "target": "数据库",
+        "type": "category"
+      },
+      {
+        "source": "服务端",
+        "target": "操作系统",
+        "type": "category"
+      },
+      {
+        "source": "Frontend_Basic",
+        "target": "行业标准",
+        "type": "category"
+      },
+      {
+        "source": "行业标准",
+        "target": "W3C_WHATWG",
+        "type": "category"
+      },
+      {
+        "source": "W3C_WHATWG",
+        "target": "CSS标准",
+        "type": "category"
+      },
+      {
+        "source": "W3C_WHATWG",
+        "target": "HTML、XHTML、XML、HTML5标准",
+        "type": "category"
+      },
+      {
+        "source": "W3C_WHATWG",
+        "target": "DOM标准",
+        "type": "category"
+      },
+      {
+        "source": "W3C_WHATWG",
+        "target": "SVG标准",
+        "type": "category"
+      },
+      {
+        "source": "W3C_WHATWG",
+        "target": "小程序标准",
+        "type": "category"
+      },
+      {
+        "source": "行业标准",
+        "target": "ECMA-TC39",
+        "type": "category"
+      },
+      {
+        "source": "ECMA-TC39",
+        "target": "ECMAScript标准",
+        "type": "category"
+      },
+      {
+        "source": "研发工具",
+        "target": "编辑器",
+        "type": "category"
+      },
+      {
+        "source": "编辑器",
+        "target": "Atom",
+        "type": "category"
+      },
+      {
+        "source": "编辑器",
+        "target": "Visual_Studio_Code",
+        "type": "category"
+      },
+      {
+        "source": "编辑器",
+        "target": "Webstorm",
+        "type": "category"
+      },
+      {
+        "source": "研发工具",
+        "target": "调试预览",
+        "type": "category"
+      },
+      {
+        "source": "调试预览",
+        "target": "浏览器调试工具",
+        "type": "category"
+      },
+      {
+        "source": "浏览器调试工具",
+        "target": "FireBug",
+        "type": "category"
+      },
+      {
+        "source": "浏览器调试工具",
+        "target": "Chrome_DevTools",
+        "type": "category"
+      },
+      {
+        "source": "调试预览",
+        "target": "在线服务",
+        "type": "category"
+      },
+      {
+        "source": "在线服务",
+        "target": "CodePen",
+        "type": "category"
+      },
+      {
+        "source": "在线服务",
+        "target": "JSFiddle",
+        "type": "category"
+      },
+      {
+        "source": "研发工具",
+        "target": "图片编辑器",
+        "type": "category"
+      },
+      {
+        "source": "图片编辑器",
+        "target": "PhotoShop",
+        "type": "category"
+      },
+      {
+        "source": "图片编辑器",
+        "target": "Sketch",
+        "type": "category"
+      },
+      {
+        "source": "研发工具",
+        "target": "版本管理",
+        "type": "category"
+      },
+      {
+        "source": "版本管理",
+        "target": "Git",
+        "type": "category"
+      },
+      {
+        "source": "版本管理",
+        "target": "SVN",
+        "type": "category"
+      },
+      {
+        "source": "HTML",
+        "target": "元素",
+        "type": "category"
+      },
+      {
+        "source": "元素",
+        "target": "根元素",
+        "type": "category"
+      },
+      {
+        "source": "根元素",
+        "target": "主根元素html",
+        "type": "category"
+      },
+      {
+        "source": "根元素",
+        "target": "分区根元素body",
+        "type": "category"
+      },
+      {
+        "source": "元素",
+        "target": "元数据",
+        "type": "category"
+      },
+      {
+        "source": "元数据",
+        "target": "base",
+        "type": "category"
+      },
+      {
+        "source": "元数据",
+        "target": "head",
+        "type": "category"
+      },
+      {
+        "source": "元数据",
+        "target": "title",
+        "type": "category"
+      },
+      {
+        "source": "元数据",
+        "target": "meta",
+        "type": "category"
+      },
+      {
+        "source": "元数据",
+        "target": "link",
+        "type": "category"
+      },
+      {
+        "source": "元数据",
+        "target": "style",
+        "type": "category"
+      },
+      {
+        "source": "元素",
+        "target": "内容分区",
+        "type": "category"
+      },
+      {
+        "source": "内容分区",
+        "target": "header",
+        "type": "category"
+      },
+      {
+        "source": "内容分区",
+        "target": "footer",
+        "type": "category"
+      },
+      {
+        "source": "内容分区",
+        "target": "p",
+        "type": "category"
+      },
+      {
+        "source": "内容分区",
+        "target": "注释",
+        "type": "category"
+      },
+      {
+        "source": "内容分区",
+        "target": "article",
+        "type": "category"
+      },
+      {
+        "source": "内容分区",
+        "target": "nav",
+        "type": "category"
+      },
+      {
+        "source": "内容分区",
+        "target": "section",
+        "type": "category"
+      },
+      {
+        "source": "内容分区",
+        "target": "address",
+        "type": "category"
+      },
+      {
+        "source": "元素",
+        "target": "内容",
+        "type": "category"
+      },
+      {
+        "source": "内容",
+        "target": "块级内容_div、dir",
+        "type": "category"
+      },
+      {
+        "source": "内容",
+        "target": "文字内容_a、b、strong",
+        "type": "category"
+      },
+      {
+        "source": "元素",
+        "target": "图片和多媒体",
+        "type": "category"
+      },
+      {
+        "source": "图片和多媒体",
+        "target": "video",
+        "type": "category"
+      },
+      {
+        "source": "图片和多媒体",
+        "target": "img",
+        "type": "category"
+      },
+      {
+        "source": "图片和多媒体",
+        "target": "figure",
+        "type": "category"
+      },
+      {
+        "source": "图片和多媒体",
+        "target": "audio",
+        "type": "category"
+      },
+      {
+        "source": "元素",
+        "target": "内嵌内容",
+        "type": "category"
+      },
+      {
+        "source": "内嵌内容",
+        "target": "object",
+        "type": "category"
+      },
+      {
+        "source": "内嵌内容",
+        "target": "iframe",
+        "type": "category"
+      },
+      {
+        "source": "元素",
+        "target": "脚本",
+        "type": "category"
+      },
+      {
+        "source": "脚本",
+        "target": "script",
+        "type": "category"
+      },
+      {
+        "source": "脚本",
+        "target": "noscript",
+        "type": "category"
+      },
+      {
+        "source": "脚本",
+        "target": "canvas",
+        "type": "category"
+      },
+      {
+        "source": "元素",
+        "target": "表格",
+        "type": "category"
+      },
+      {
+        "source": "表格",
+        "target": "tbody",
+        "type": "category"
+      },
+      {
+        "source": "表格",
+        "target": "table",
+        "type": "category"
+      },
+      {
+        "source": "元素",
+        "target": "表单",
+        "type": "category"
+      },
+      {
+        "source": "表单",
+        "target": "input",
+        "type": "category"
+      },
+      {
+        "source": "表单",
+        "target": "textarea",
+        "type": "category"
+      },
+      {
+        "source": "表单",
+        "target": "form",
+        "type": "category"
+      },
+      {
+        "source": "表单",
+        "target": "button",
+        "type": "category"
+      },
+      {
+        "source": "元素",
+        "target": "可交互元素",
+        "type": "category"
+      },
+      {
+        "source": "可交互元素",
+        "target": "menuitem",
+        "type": "category"
+      },
+      {
+        "source": "可交互元素",
+        "target": "menu",
+        "type": "category"
+      },
+      {
+        "source": "元素",
+        "target": "内联文本语义",
+        "type": "category"
+      },
+      {
+        "source": "内联文本语义",
+        "target": "a",
+        "type": "category"
+      },
+      {
+        "source": "内联文本语义",
+        "target": "abbr",
+        "type": "category"
+      },
+      {
+        "source": "内联文本语义",
+        "target": "b",
+        "type": "category"
+      },
+      {
+        "source": "内联文本语义",
+        "target": "br",
+        "type": "category"
+      },
+      {
+        "source": "内联文本语义",
+        "target": "cite",
+        "type": "category"
+      },
+      {
+        "source": "内联文本语义",
+        "target": "code",
+        "type": "category"
+      },
+      {
+        "source": "内联文本语义",
+        "target": "dfn",
+        "type": "category"
+      },
+      {
+        "source": "内联文本语义",
+        "target": "em",
+        "type": "category"
+      },
+      {
+        "source": "内联文本语义",
+        "target": "i",
+        "type": "category"
+      },
+      {
+        "source": "内联文本语义",
+        "target": "kbd",
+        "type": "category"
+      },
+      {
+        "source": "内联文本语义",
+        "target": "mark",
+        "type": "category"
+      },
+      {
+        "source": "内联文本语义",
+        "target": "q",
+        "type": "category"
+      },
+      {
+        "source": "内联文本语义",
+        "target": "s",
+        "type": "category"
+      },
+      {
+        "source": "内联文本语义",
+        "target": "samp",
+        "type": "category"
+      },
+      {
+        "source": "内联文本语义",
+        "target": "small",
+        "type": "category"
+      },
+      {
+        "source": "内联文本语义",
+        "target": "span",
+        "type": "category"
+      },
+      {
+        "source": "内联文本语义",
+        "target": "strong",
+        "type": "category"
+      },
+      {
+        "source": "内联文本语义",
+        "target": "sub",
+        "type": "category"
+      },
+      {
+        "source": "内联文本语义",
+        "target": "sup",
+        "type": "category"
+      },
+      {
+        "source": "内联文本语义",
+        "target": "u",
+        "type": "category"
+      },
+      {
+        "source": "内联文本语义",
+        "target": "var",
+        "type": "category"
+      },
+      {
+        "source": "HTML",
+        "target": "属性",
+        "type": "category"
+      },
+      {
+        "source": "属性",
+        "target": "常用属性",
+        "type": "category"
+      },
+      {
+        "source": "常用属性",
+        "target": "class",
+        "type": "category"
+      },
+      {
+        "source": "常用属性",
+        "target": "id",
+        "type": "category"
+      },
+      {
+        "source": "常用属性",
+        "target": "style",
+        "type": "category"
+      },
+      {
+        "source": "常用属性",
+        "target": "title",
+        "type": "category"
+      },
+      {
+        "source": "属性",
+        "target": "全局属性",
+        "type": "category"
+      },
+      {
+        "source": "全局属性",
+        "target": "accesskey",
+        "type": "category"
+      },
+      {
+        "source": "全局属性",
+        "target": "class",
+        "type": "category"
+      },
+      {
+        "source": "全局属性",
+        "target": "contenteditable",
+        "type": "category"
+      },
+      {
+        "source": "全局属性",
+        "target": "dir",
+        "type": "category"
+      },
+      {
+        "source": "全局属性",
+        "target": "draggable",
+        "type": "category"
+      },
+      {
+        "source": "全局属性",
+        "target": "hidden",
+        "type": "category"
+      },
+      {
+        "source": "全局属性",
+        "target": "id",
+        "type": "category"
+      },
+      {
+        "source": "全局属性",
+        "target": "lang",
+        "type": "category"
+      },
+      {
+        "source": "全局属性",
+        "target": "spellcheck",
+        "type": "category"
+      },
+      {
+        "source": "全局属性",
+        "target": "style",
+        "type": "category"
+      },
+      {
+        "source": "全局属性",
+        "target": "title",
+        "type": "category"
+      },
+      {
+        "source": "全局属性",
+        "target": "tabindex",
+        "type": "category"
+      },
+      {
+        "source": "全局属性",
+        "target": "translate",
+        "type": "category"
+      },
+      {
+        "source": "HTML",
+        "target": "事件",
+        "type": "category"
+      },
+      {
+        "source": "事件",
+        "target": "窗口事件",
+        "type": "category"
+      },
+      {
+        "source": "窗口事件",
+        "target": "load",
+        "type": "category"
+      },
+      {
+        "source": "窗口事件",
+        "target": "unload",
+        "type": "category"
+      },
+      {
+        "source": "窗口事件",
+        "target": "resize",
+        "type": "category"
+      },
+      {
+        "source": "窗口事件",
+        "target": "scroll",
+        "type": "category"
+      },
+      {
+        "source": "事件",
+        "target": "表单事件",
+        "type": "category"
+      },
+      {
+        "source": "表单事件",
+        "target": "submit",
+        "type": "category"
+      },
+      {
+        "source": "表单事件",
+        "target": "reset",
+        "type": "category"
+      },
+      {
+        "source": "表单事件",
+        "target": "change",
+        "type": "category"
+      },
+      {
+        "source": "表单事件",
+        "target": "focus",
+        "type": "category"
+      },
+      {
+        "source": "表单事件",
+        "target": "blur",
+        "type": "category"
+      },
+      {
+        "source": "事件",
+        "target": "键盘事件",
+        "type": "category"
+      },
+      {
+        "source": "键盘事件",
+        "target": "keydown",
+        "type": "category"
+      },
+      {
+        "source": "键盘事件",
+        "target": "keyup",
+        "type": "category"
+      },
+      {
+        "source": "键盘事件",
+        "target": "keypress",
+        "type": "category"
+      },
+      {
+        "source": "事件",
+        "target": "鼠标事件",
+        "type": "category"
+      },
+      {
+        "source": "鼠标事件",
+        "target": "click",
+        "type": "category"
+      },
+      {
+        "source": "鼠标事件",
+        "target": "dblclick",
+        "type": "category"
+      },
+      {
+        "source": "鼠标事件",
+        "target": "mousedown",
+        "type": "category"
+      },
+      {
+        "source": "鼠标事件",
+        "target": "mouseup",
+        "type": "category"
+      },
+      {
+        "source": "鼠标事件",
+        "target": "mousemove",
+        "type": "category"
+      },
+      {
+        "source": "鼠标事件",
+        "target": "mouseover",
+        "type": "category"
+      },
+      {
+        "source": "鼠标事件",
+        "target": "mouseout",
+        "type": "category"
+      },
+      {
+        "source": "事件",
+        "target": "多媒体事件",
+        "type": "category"
+      },
+      {
+        "source": "多媒体事件",
+        "target": "play",
+        "type": "category"
+      },
+      {
+        "source": "多媒体事件",
+        "target": "pause",
+        "type": "category"
+      },
+      {
+        "source": "多媒体事件",
+        "target": "ended",
+        "type": "category"
+      },
+      {
+        "source": "多媒体事件",
+        "target": "volumechange",
+        "type": "category"
+      },
+      {
+        "source": "CSS",
+        "target": "语法",
+        "type": "category"
+      },
+      {
+        "source": "语法",
+        "target": "@规则",
+        "type": "category"
+      },
+      {
+        "source": "@规则",
+        "target": "@import",
+        "type": "category"
+      },
+      {
+        "source": "@规则",
+        "target": "@charset",
+        "type": "category"
+      },
+      {
+        "source": "@规则",
+        "target": "@media",
+        "type": "category"
+      },
+      {
+        "source": "@规则",
+        "target": "@supports",
+        "type": "category"
+      },
+      {
+        "source": "@规则",
+        "target": "@keyframes",
+        "type": "category"
+      },
+      {
+        "source": "@规则",
+        "target": "@document",
+        "type": "category"
+      },
+      {
+        "source": "语法",
+        "target": "层叠",
+        "type": "category"
+      },
+      {
+        "source": "层叠",
+        "target": "层叠规则",
+        "type": "category"
+      },
+      {
+        "source": "层叠",
+        "target": "继承机制",
+        "type": "category"
+      },
+      {
+        "source": "层叠",
+        "target": "特异性计算",
+        "type": "category"
+      },
+      {
+        "source": "语法",
+        "target": "注释",
+        "type": "category"
+      },
+      {
+        "source": "语法",
+        "target": "解释器",
+        "type": "category"
+      },
+      {
+        "source": "语法",
+        "target": "继承",
+        "type": "category"
+      },
+      {
+        "source": "语法",
+        "target": "简写",
+        "type": "category"
+      },
+      {
+        "source": "语法",
+        "target": "优先级",
+        "type": "category"
+      },
+      {
+        "source": "语法",
+        "target": "值定义",
+        "type": "category"
+      },
+      {
+        "source": "值定义",
+        "target": "关键字",
+        "type": "category"
+      },
+      {
+        "source": "值定义",
+        "target": "数值",
+        "type": "category"
+      },
+      {
+        "source": "值定义",
+        "target": "长度",
+        "type": "category"
+      },
+      {
+        "source": "值定义",
+        "target": "百分比",
+        "type": "category"
+      },
+      {
+        "source": "值定义",
+        "target": "颜色",
+        "type": "category"
+      },
+      {
+        "source": "值定义",
+        "target": "函数",
+        "type": "category"
+      },
+      {
+        "source": "语法",
+        "target": "单位与取值类型",
+        "type": "category"
+      },
+      {
+        "source": "单位与取值类型",
+        "target": "绝对单位（px_in_cm）",
+        "type": "category"
+      },
+      {
+        "source": "单位与取值类型",
+        "target": "相对单位（em_rem_%_vw_vh）",
+        "type": "category"
+      },
+      {
+        "source": "单位与取值类型",
+        "target": "角度（deg_rad）",
+        "type": "category"
+      },
+      {
+        "source": "单位与取值类型",
+        "target": "时间（s_ms）",
+        "type": "category"
+      },
+      {
+        "source": "CSS",
+        "target": "选择器",
+        "type": "category"
+      },
+      {
+        "source": "选择器",
+        "target": "基础选择器",
+        "type": "category"
+      },
+      {
+        "source": "基础选择器",
+        "target": "元素选择器",
+        "type": "category"
+      },
+      {
+        "source": "基础选择器",
+        "target": "类选择器",
+        "type": "category"
+      },
+      {
+        "source": "基础选择器",
+        "target": "ID选择器",
+        "type": "category"
+      },
+      {
+        "source": "基础选择器",
+        "target": "通配选择器",
+        "type": "category"
+      },
+      {
+        "source": "选择器",
+        "target": "组合选择器",
+        "type": "category"
+      },
+      {
+        "source": "组合选择器",
+        "target": "后代选择器",
+        "type": "category"
+      },
+      {
+        "source": "组合选择器",
+        "target": "子选择器",
+        "type": "category"
+      },
+      {
+        "source": "组合选择器",
+        "target": "相邻兄弟选择器",
+        "type": "category"
+      },
+      {
+        "source": "组合选择器",
+        "target": "通用兄弟选择器",
+        "type": "category"
+      },
+      {
+        "source": "选择器",
+        "target": "伪类选择器",
+        "type": "category"
+      },
+      {
+        "source": "伪类选择器",
+        "target": "结构伪类（:nth-child）",
+        "type": "category"
+      },
+      {
+        "source": "伪类选择器",
+        "target": "状态伪类（:hover_:focus）",
+        "type": "category"
+      },
+      {
+        "source": "伪类选择器",
+        "target": "目标伪类（:target）",
+        "type": "category"
+      },
+      {
+        "source": "选择器",
+        "target": "伪元素选择器",
+        "type": "category"
+      },
+      {
+        "source": "伪元素选择器",
+        "target": "::before_::after",
+        "type": "category"
+      },
+      {
+        "source": "伪元素选择器",
+        "target": "::first-letter_::first-line",
+        "type": "category"
+      },
+      {
+        "source": "CSS",
+        "target": "核心属性",
+        "type": "category"
+      },
+      {
+        "source": "核心属性",
+        "target": "布局属性",
+        "type": "category"
+      },
+      {
+        "source": "布局属性",
+        "target": "display（block_inline-flex_grid）",
+        "type": "category"
+      },
+      {
+        "source": "布局属性",
+        "target": "position（static_relative_absolute）",
+        "type": "category"
+      },
+      {
+        "source": "布局属性",
+        "target": "float_clear",
+        "type": "category"
+      },
+      {
+        "source": "核心属性",
+        "target": "盒模型",
+        "type": "category"
+      },
+      {
+        "source": "盒模型",
+        "target": "width_height",
+        "type": "category"
+      },
+      {
+        "source": "盒模型",
+        "target": "padding",
+        "type": "category"
+      },
+      {
+        "source": "盒模型",
+        "target": "border",
+        "type": "category"
+      },
+      {
+        "source": "盒模型",
+        "target": "margin",
+        "type": "category"
+      },
+      {
+        "source": "盒模型",
+        "target": "box-sizing（content-box_border-box）",
+        "type": "category"
+      },
+      {
+        "source": "核心属性",
+        "target": "视觉格式化",
+        "type": "category"
+      },
+      {
+        "source": "视觉格式化",
+        "target": "正常流",
+        "type": "category"
+      },
+      {
+        "source": "视觉格式化",
+        "target": "弹性盒子",
+        "type": "category"
+      },
+      {
+        "source": "视觉格式化",
+        "target": "网格布局",
+        "type": "category"
+      },
+      {
+        "source": "视觉格式化",
+        "target": "多列布局",
+        "type": "category"
+      },
+      {
+        "source": "CSS",
+        "target": "高级布局",
+        "type": "category"
+      },
+      {
+        "source": "高级布局",
+        "target": "Flexbox布局",
+        "type": "category"
+      },
+      {
+        "source": "Flexbox布局",
+        "target": "弹性容器属性（flex-direction_justify-content）",
+        "type": "category"
+      },
+      {
+        "source": "Flexbox布局",
+        "target": "弹性项目属性（flex-grow_flex-shrink）",
+        "type": "category"
+      },
+      {
+        "source": "高级布局",
+        "target": "Grid布局",
+        "type": "category"
+      },
+      {
+        "source": "Grid布局",
+        "target": "网格容器（grid-template-columns）",
+        "type": "category"
+      },
+      {
+        "source": "Grid布局",
+        "target": "网格项（grid-column-start_end）",
+        "type": "category"
+      },
+      {
+        "source": "高级布局",
+        "target": "多列布局",
+        "type": "category"
+      },
+      {
+        "source": "多列布局",
+        "target": "column-count",
+        "type": "category"
+      },
+      {
+        "source": "多列布局",
+        "target": "column-gap",
+        "type": "category"
+      },
+      {
+        "source": "多列布局",
+        "target": "break-inside",
+        "type": "category"
+      },
+      {
+        "source": "CSS",
+        "target": "视觉样式",
+        "type": "category"
+      },
+      {
+        "source": "视觉样式",
+        "target": "背景与边框",
+        "type": "category"
+      },
+      {
+        "source": "背景与边框",
+        "target": "background-image_clip_origin",
+        "type": "category"
+      },
+      {
+        "source": "背景与边框",
+        "target": "border-radius",
+        "type": "category"
+      },
+      {
+        "source": "背景与边框",
+        "target": "box-shadow",
+        "type": "category"
+      },
+      {
+        "source": "视觉样式",
+        "target": "文本样式",
+        "type": "category"
+      },
+      {
+        "source": "文本样式",
+        "target": "font-family_size_weight",
+        "type": "category"
+      },
+      {
+        "source": "文本样式",
+        "target": "line-height",
+        "type": "category"
+      },
+      {
+        "source": "文本样式",
+        "target": "text-align",
+        "type": "category"
+      },
+      {
+        "source": "文本样式",
+        "target": "text-shadow",
+        "type": "category"
+      },
+      {
+        "source": "视觉样式",
+        "target": "列表与表格",
+        "type": "category"
+      },
+      {
+        "source": "列表与表格",
+        "target": "list-style-type",
+        "type": "category"
+      },
+      {
+        "source": "列表与表格",
+        "target": "table-layout",
+        "type": "category"
+      },
+      {
+        "source": "列表与表格",
+        "target": "border-collapse",
+        "type": "category"
+      },
+      {
+        "source": "CSS",
+        "target": "动态效果",
+        "type": "category"
+      },
+      {
+        "source": "动态效果",
+        "target": "过渡效果",
+        "type": "category"
+      },
+      {
+        "source": "过渡效果",
+        "target": "transition-property_duration_timing-function",
+        "type": "category"
+      },
+      {
+        "source": "动态效果",
+        "target": "变形操作",
+        "type": "category"
+      },
+      {
+        "source": "变形操作",
+        "target": "transform（translate_scale_rotate）",
+        "type": "category"
+      },
+      {
+        "source": "变形操作",
+        "target": "transform-origin",
+        "type": "category"
+      },
+      {
+        "source": "动态效果",
+        "target": "动画控制",
+        "type": "category"
+      },
+      {
+        "source": "动画控制",
+        "target": "@keyframes、animation-fill-mode_direction",
+        "type": "category"
+      },
+      {
+        "source": "CSS",
+        "target": "响应式设计",
+        "type": "category"
+      },
+      {
+        "source": "响应式设计",
+        "target": "媒体查询",
+        "type": "category"
+      },
+      {
+        "source": "媒体查询",
+        "target": "@media_(max-width)",
+        "type": "category"
+      },
+      {
+        "source": "媒体查询",
+        "target": "设备方向（orientation）",
+        "type": "category"
+      },
+      {
+        "source": "媒体查询",
+        "target": "分辨率（resolution）",
+        "type": "category"
+      },
+      {
+        "source": "响应式设计",
+        "target": "视口控制",
+        "type": "category"
+      },
+      {
+        "source": "视口控制",
+        "target": "viewport_meta标签",
+        "type": "category"
+      },
+      {
+        "source": "视口控制",
+        "target": "vw_vh单位",
+        "type": "category"
+      },
+      {
+        "source": "视口控制",
+        "target": "rem_em单位",
+        "type": "category"
+      },
+      {
+        "source": "CSS",
+        "target": "性能优化",
+        "type": "category"
+      },
+      {
+        "source": "性能优化",
+        "target": "渲染性能",
+        "type": "category"
+      },
+      {
+        "source": "渲染性能",
+        "target": "repaint_reflow优化",
+        "type": "category"
+      },
+      {
+        "source": "渲染性能",
+        "target": "CSS_containment",
+        "type": "category"
+      },
+      {
+        "source": "性能优化",
+        "target": "资源加载",
+        "type": "category"
+      },
+      {
+        "source": "资源加载",
+        "target": "链接方式（link_import）",
+        "type": "category"
+      },
+      {
+        "source": "资源加载",
+        "target": "预加载",
+        "type": "category"
+      },
+      {
+        "source": "资源加载",
+        "target": "懒加载",
+        "type": "category"
+      },
+      {
+        "source": "JavaScript",
+        "target": "基础语法",
+        "type": "category"
+      },
+      {
+        "source": "基础语法",
+        "target": "变量",
+        "type": "category"
+      },
+      {
+        "source": "变量",
+        "target": "引用值",
+        "type": "category"
+      },
+      {
+        "source": "变量",
+        "target": "原始值",
+        "type": "category"
+      },
+      {
+        "source": "基础语法",
+        "target": "声明",
+        "type": "category"
+      },
+      {
+        "source": "声明",
+        "target": "var",
+        "type": "category"
+      },
+      {
+        "source": "声明",
+        "target": "let",
+        "type": "category"
+      },
+      {
+        "source": "声明",
+        "target": "const",
+        "type": "category"
+      },
+      {
+        "source": "基础语法",
+        "target": "数据类型",
+        "type": "category"
+      },
+      {
+        "source": "数据类型",
+        "target": "基本类型",
+        "type": "category"
+      },
+      {
+        "source": "基本类型",
+        "target": "String",
+        "type": "category"
+      },
+      {
+        "source": "基本类型",
+        "target": "Number",
+        "type": "category"
+      },
+      {
+        "source": "基本类型",
+        "target": "Boolean",
+        "type": "category"
+      },
+      {
+        "source": "基本类型",
+        "target": "Null",
+        "type": "category"
+      },
+      {
+        "source": "基本类型",
+        "target": "Undefined",
+        "type": "category"
+      },
+      {
+        "source": "基本类型",
+        "target": "Symbol_(唯一值)",
+        "type": "category"
+      },
+      {
+        "source": "基本类型",
+        "target": "BigInt",
+        "type": "category"
+      },
+      {
+        "source": "数据类型",
+        "target": "引用类型",
+        "type": "category"
+      },
+      {
+        "source": "数据类型",
+        "target": "类型检测",
+        "type": "category"
+      },
+      {
+        "source": "数据类型",
+        "target": "类型转换_(显式与隐式)",
+        "type": "category"
+      },
+      {
+        "source": "基础语法",
+        "target": "运算符",
+        "type": "category"
+      },
+      {
+        "source": "运算符",
+        "target": "算术、赋值、比较、逻辑",
+        "type": "category"
+      },
+      {
+        "source": "运算符",
+        "target": "位运算符",
+        "type": "category"
+      },
+      {
+        "source": "运算符",
+        "target": "三元运算符",
+        "type": "category"
+      },
+      {
+        "source": "基础语法",
+        "target": "流程控制",
+        "type": "category"
+      },
+      {
+        "source": "流程控制",
+        "target": "if___else,_switch",
+        "type": "category"
+      },
+      {
+        "source": "流程控制",
+        "target": "for,_while,_do___while",
+        "type": "category"
+      },
+      {
+        "source": "流程控制",
+        "target": "for___in_(遍历键)",
+        "type": "category"
+      },
+      {
+        "source": "流程控制",
+        "target": "for___of_(遍历值_-_需可迭代)",
+        "type": "category"
+      },
+      {
+        "source": "JavaScript",
+        "target": "函数",
+        "type": "category"
+      },
+      {
+        "source": "函数",
+        "target": "函数声明",
+        "type": "category"
+      },
+      {
+        "source": "函数",
+        "target": "函数表达式",
+        "type": "category"
+      },
+      {
+        "source": "函数",
+        "target": "箭头函数",
+        "type": "category"
+      },
+      {
+        "source": "函数",
+        "target": "参数",
+        "type": "category"
+      },
+      {
+        "source": "参数",
+        "target": "arguments_对象",
+        "type": "category"
+      },
+      {
+        "source": "参数",
+        "target": "Rest_参数_(___)",
+        "type": "category"
+      },
+      {
+        "source": "参数",
+        "target": "Spread_运算符_(___)",
+        "type": "category"
+      },
+      {
+        "source": "参数",
+        "target": "默认参数",
+        "type": "category"
+      },
+      {
+        "source": "函数",
+        "target": "作用域与闭包",
+        "type": "category"
+      },
+      {
+        "source": "作用域与闭包",
+        "target": "全局、函数、块级作用域",
+        "type": "category"
+      },
+      {
+        "source": "作用域与闭包",
+        "target": "词法作用域",
+        "type": "category"
+      },
+      {
+        "source": "作用域与闭包",
+        "target": "闭包",
+        "type": "category"
+      },
+      {
+        "source": "函数",
+        "target": "执行上下文与调用栈",
+        "type": "category"
+      },
+      {
+        "source": "执行上下文与调用栈",
+        "target": "`this`_关键字",
+        "type": "category"
+      },
+      {
+        "source": "执行上下文与调用栈",
+        "target": "全局上下文",
+        "type": "category"
+      },
+      {
+        "source": "执行上下文与调用栈",
+        "target": "函数调用",
+        "type": "category"
+      },
+      {
+        "source": "执行上下文与调用栈",
+        "target": "方法调用",
+        "type": "category"
+      },
+      {
+        "source": "执行上下文与调用栈",
+        "target": "构造函数调用",
+        "type": "category"
+      },
+      {
+        "source": "执行上下文与调用栈",
+        "target": "call,_apply,_bind_(显式绑定)",
+        "type": "category"
+      },
+      {
+        "source": "函数",
+        "target": "高阶函数",
+        "type": "category"
+      },
+      {
+        "source": "高阶函数",
+        "target": "柯里化_(Currying)",
+        "type": "category"
+      },
+      {
+        "source": "高阶函数",
+        "target": "函数组合_(Composition)",
+        "type": "category"
+      },
+      {
+        "source": "JavaScript",
+        "target": "数据结构与内置对象",
+        "type": "category"
+      },
+      {
+        "source": "数据结构与内置对象",
+        "target": "Object",
+        "type": "category"
+      },
+      {
+        "source": "Object",
+        "target": "属性描述符_(Property_Descriptors)",
+        "type": "category"
+      },
+      {
+        "source": "Object",
+        "target": "getters___setters",
+        "type": "category"
+      },
+      {
+        "source": "Object",
+        "target": "Object_keys,_values,_entries",
+        "type": "category"
+      },
+      {
+        "source": "Object",
+        "target": "Object_create,_Object_assign",
+        "type": "category"
+      },
+      {
+        "source": "数据结构与内置对象",
+        "target": "Array",
+        "type": "category"
+      },
+      {
+        "source": "Array",
+        "target": "常用方法_(map,_filter,_reduce,_find)",
+        "type": "category"
+      },
+      {
+        "source": "Array",
+        "target": "splice,_slice",
+        "type": "category"
+      },
+      {
+        "source": "Array",
+        "target": "push,_pop,_shift,_unshift",
+        "type": "category"
+      },
+      {
+        "source": "Array",
+        "target": "Array_from,_Array_of",
+        "type": "category"
+      },
+      {
+        "source": "数据结构与内置对象",
+        "target": "String_(常用方法)",
+        "type": "category"
+      },
+      {
+        "source": "数据结构与内置对象",
+        "target": "Map___Set",
+        "type": "category"
+      },
+      {
+        "source": "数据结构与内置对象",
+        "target": "WeakMap___WeakSet",
+        "type": "category"
+      },
+      {
+        "source": "WeakMap___WeakSet",
+        "target": "弱引用",
+        "type": "category"
+      },
+      {
+        "source": "WeakMap___WeakSet",
+        "target": "垃圾回收",
+        "type": "category"
+      },
+      {
+        "source": "垃圾回收",
+        "target": "标记清理",
+        "type": "category"
+      },
+      {
+        "source": "垃圾回收",
+        "target": "引用计数",
+        "type": "category"
+      },
+      {
+        "source": "数据结构与内置对象",
+        "target": "JSON",
+        "type": "category"
+      },
+      {
+        "source": "JSON",
+        "target": "JSON.stringify",
+        "type": "category"
+      },
+      {
+        "source": "JSON",
+        "target": "JSON.parse",
+        "type": "category"
+      },
+      {
+        "source": "数据结构与内置对象",
+        "target": "Date",
+        "type": "category"
+      },
+      {
+        "source": "数据结构与内置对象",
+        "target": "解构赋值",
+        "type": "category"
+      },
+      {
+        "source": "解构赋值",
+        "target": "数组解构",
+        "type": "category"
+      },
+      {
+        "source": "解构赋值",
+        "target": "对象解构",
+        "type": "category"
+      },
+      {
+        "source": "JavaScript",
+        "target": "模块化",
+        "type": "category"
+      },
+      {
+        "source": "模块化",
+        "target": "ES_Modules",
+        "type": "category"
+      },
+      {
+        "source": "ES_Modules",
+        "target": "`import`",
+        "type": "category"
+      },
+      {
+        "source": "ES_Modules",
+        "target": "`export`___`export_default`",
+        "type": "category"
+      },
+      {
+        "source": "ES_Modules",
+        "target": "动态导入_`import()`",
+        "type": "category"
+      },
+      {
+        "source": "模块化",
+        "target": "CommonJS_(Node_js)",
+        "type": "category"
+      },
+      {
+        "source": "CommonJS_(Node_js)",
+        "target": "`require()`",
+        "type": "category"
+      },
+      {
+        "source": "CommonJS_(Node_js)",
+        "target": "`module_exports`___`exports`",
+        "type": "category"
+      },
+      {
+        "source": "模块化",
+        "target": "AMD___UMD_(历史)",
+        "type": "category"
+      },
+      {
+        "source": "JavaScript",
+        "target": "错误处理_(Error_Handling)",
+        "type": "category"
+      },
+      {
+        "source": "错误处理_(Error_Handling)",
+        "target": "异常",
+        "type": "category"
+      },
+      {
+        "source": "错误处理_(Error_Handling)",
+        "target": "捕获",
+        "type": "category"
+      },
+      {
+        "source": "错误处理_(Error_Handling)",
+        "target": "扩展异常",
+        "type": "category"
+      },
+      {
+        "source": "扩展异常",
+        "target": "全局捕获",
+        "type": "category"
+      },
+      {
+        "source": "扩展异常",
+        "target": "同步捕获",
+        "type": "category"
+      },
+      {
+        "source": "扩展异常",
+        "target": "异步捕获",
+        "type": "category"
+      },
+      {
+        "source": "错误处理_(Error_Handling)",
+        "target": "抛出",
+        "type": "category"
+      },
+      {
+        "source": "错误处理_(Error_Handling)",
+        "target": "Error_对象",
+        "type": "category"
+      },
+      {
+        "source": "Error_对象",
+        "target": "SyntaxError,_TypeError,_ReferenceError___",
+        "type": "category"
+      },
+      {
+        "source": "Browser",
+        "target": "DOM",
+        "type": "category"
+      },
+      {
+        "source": "DOM",
+        "target": "DOM_Tree",
+        "type": "category"
+      },
+      {
+        "source": "DOM",
+        "target": "DOM_Node",
+        "type": "category"
+      },
+      {
+        "source": "DOM",
+        "target": "DOM_Query",
+        "type": "category"
+      },
+      {
+        "source": "DOM",
+        "target": "DOM_Properties",
+        "type": "category"
+      },
+      {
+        "source": "DOM",
+        "target": "DOM_Modify",
+        "type": "category"
+      },
+      {
+        "source": "DOM",
+        "target": "Styles",
+        "type": "category"
+      },
+      {
+        "source": "DOM",
+        "target": "Coordinates、Element_Scrolling",
+        "type": "category"
+      },
+      {
+        "source": "DOM",
+        "target": "DOM_Events",
+        "type": "category"
+      },
+      {
+        "source": "DOM_Events",
+        "target": "UI_Event",
+        "type": "category"
+      },
+      {
+        "source": "Browser",
+        "target": "浏览器API",
+        "type": "category"
+      },
+      {
+        "source": "浏览器API",
+        "target": "location",
+        "type": "category"
+      },
+      {
+        "source": "浏览器API",
+        "target": "history",
+        "type": "category"
+      },
+      {
+        "source": "浏览器API",
+        "target": "navigator",
+        "type": "category"
+      },
+      {
+        "source": "浏览器API",
+        "target": "Default_Actions",
+        "type": "category"
+      },
+      {
+        "source": "Default_Actions",
+        "target": "event_preventDefault()",
+        "type": "category"
+      },
+      {
+        "source": "浏览器API",
+        "target": "Form",
+        "type": "category"
+      },
+      {
+        "source": "Form",
+        "target": "change\\focus\\blur\\submit",
+        "type": "category"
+      },
+      {
+        "source": "Browser",
+        "target": "网络",
+        "type": "category"
+      },
+      {
+        "source": "网络",
+        "target": "XHR",
+        "type": "category"
+      },
+      {
+        "source": "网络",
+        "target": "Fetch",
+        "type": "category"
+      },
+      {
+        "source": "网络",
+        "target": "JSONP",
+        "type": "category"
+      },
+      {
+        "source": "网络",
+        "target": "WebSocket",
+        "type": "category"
+      },
+      {
+        "source": "Browser",
+        "target": "权限",
+        "type": "category"
+      },
+      {
+        "source": "权限",
+        "target": "Cookie",
+        "type": "category"
+      },
+      {
+        "source": "权限",
+        "target": "Session",
+        "type": "category"
+      },
+      {
+        "source": "权限",
+        "target": "OAuth",
+        "type": "category"
+      },
+      {
+        "source": "权限",
+        "target": "SSO",
+        "type": "category"
+      },
+      {
+        "source": "权限",
+        "target": "JWT",
+        "type": "category"
+      },
+      {
+        "source": "Browser",
+        "target": "安全与隐私",
+        "type": "category"
+      },
+      {
+        "source": "安全与隐私",
+        "target": "Content_Security_Policy（CSP）",
+        "type": "category"
+      },
+      {
+        "source": "安全与隐私",
+        "target": "CORS",
+        "type": "category"
+      },
+      {
+        "source": "安全与隐私",
+        "target": "SQL_注入",
+        "type": "category"
+      },
+      {
+        "source": "安全与隐私",
+        "target": "XSS",
+        "type": "category"
+      },
+      {
+        "source": "安全与隐私",
+        "target": "CSRF",
+        "type": "category"
+      },
+      {
+        "source": "安全与隐私",
+        "target": "MITM",
+        "type": "category"
+      },
+      {
+        "source": "安全与隐私",
+        "target": "Samesite",
+        "type": "category"
+      },
+      {
+        "source": "Browser",
+        "target": "开发者工具",
+        "type": "category"
+      },
+      {
+        "source": "开发者工具",
+        "target": "设备模式",
+        "type": "category"
+      },
+      {
+        "source": "开发者工具",
+        "target": "元素面板",
+        "type": "category"
+      },
+      {
+        "source": "开发者工具",
+        "target": "控制台面板",
+        "type": "category"
+      },
+      {
+        "source": "开发者工具",
+        "target": "源代码面板",
+        "type": "category"
+      },
+      {
+        "source": "开发者工具",
+        "target": "网络面板",
+        "type": "category"
+      },
+      {
+        "source": "开发者工具",
+        "target": "性能面板",
+        "type": "category"
+      },
+      {
+        "source": "开发者工具",
+        "target": "内存面板",
+        "type": "category"
+      },
+      {
+        "source": "开发者工具",
+        "target": "应用面板",
+        "type": "category"
+      },
+      {
+        "source": "开发者工具",
+        "target": "安全面板",
+        "type": "category"
+      }
+    ]
+  },
+  "intermediate": {
+    "nodes": [
+      {
+        "id": "核心概念",
+        "label": "核心概念",
+        "group": "core",
+        "val": 9,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "MVVM_模式",
+        "label": "MVVM 模式",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "Virtual_DOM_(虚拟_DOM)",
+        "label": "Virtual DOM (虚拟 DOM)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "Diff_算法",
+        "label": "Diff 算法",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "Patch_(补丁)",
+        "label": "Patch (补丁)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "nextTick_(DOM_更新队列)",
+        "label": "nextTick (DOM 更新队列)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "响应式原理",
+        "label": "响应式原理",
+        "group": "core",
+        "val": 9,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "Vue_2:_Object_defineProperty",
+        "label": "Vue 2: Object.defineProperty",
+        "group": "framework",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "getter___setter",
+        "label": "getter / setter",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "数组方法的重写",
+        "label": "数组方法的重写",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "Vue_3:_Proxy",
+        "label": "Vue 3: Proxy",
+        "group": "framework",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "Proxy",
+        "label": "Proxy",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "Reflect",
+        "label": "Reflect",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "模板语法",
+        "label": "模板语法",
+        "group": "core",
+        "val": 9,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "插值",
+        "label": "插值",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "指令",
+        "label": "指令",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "v-bind_(动态属性,_简写_:)",
+        "label": "v-bind (动态属性, 简写 :)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "v-on_(事件监听,_简写_@)",
+        "label": "v-on (事件监听, 简写 @)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "v-model_(双向绑定)",
+        "label": "v-model (双向绑定)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "v-if___v-else-if___v-else_(条件渲染)",
+        "label": "v-if / v-else-if / v-else (条件渲染)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "v-show_(条件显示)",
+        "label": "v-show (条件显示)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "v-for_(列表渲染)",
+        "label": "v-for (列表渲染)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "v-slot_(插槽)",
+        "label": "v-slot (插槽)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "过滤器_(Filters)_(Vue_2)",
+        "label": "过滤器 (Filters) (Vue 2)",
+        "group": "framework",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "自定义指令_(Custom_Directives)",
+        "label": "自定义指令 (Custom Directives)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "生命周期_(Lifecycle_Hooks)",
+        "label": "生命周期 (Lifecycle Hooks)",
+        "group": "core",
+        "val": 9,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "创建阶段_(Creation)",
+        "label": "创建阶段 (Creation)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "beforeCreate",
+        "label": "beforeCreate",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "created",
+        "label": "created",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "挂载阶段_(Mounting)",
+        "label": "挂载阶段 (Mounting)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "beforeMount",
+        "label": "beforeMount",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "mounted",
+        "label": "mounted",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "更新阶段_(Updating)",
+        "label": "更新阶段 (Updating)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "beforeUpdate",
+        "label": "beforeUpdate",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "updated",
+        "label": "updated",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "销毁阶段_(Destruction)",
+        "label": "销毁阶段 (Destruction)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "beforeUnmount_(Vue_3)___beforeDestroy_(Vue_2)",
+        "label": "beforeUnmount (Vue 3) / beforeDestroy (Vue 2)",
+        "group": "framework",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "unmounted_(Vue_3)___destroyed_(Vue_2)",
+        "label": "unmounted (Vue 3) / destroyed (Vue 2)",
+        "group": "framework",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "组件",
+        "label": "组件",
+        "group": "core",
+        "val": 9,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "组件注册_(全局___局部)",
+        "label": "组件注册 (全局 / 局部)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "组件通信_(Communication)",
+        "label": "组件通信 (Communication)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "Props___$emit",
+        "label": "Props / $emit",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "v-model_(组件自定义)",
+        "label": "v-model (组件自定义)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "provide___inject_(跨层级)",
+        "label": "provide / inject (跨层级)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "Event_Bus_(事件总线)",
+        "label": "Event Bus (事件总线)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "$refs",
+        "label": "$refs",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "$parent___$root",
+        "label": "$parent / $root",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "插槽_(Slot)",
+        "label": "插槽 (Slot)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "匿名插槽_(Default_Slot)",
+        "label": "匿名插槽 (Default Slot)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "具名插槽_(Named_Slot)",
+        "label": "具名插槽 (Named Slot)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "作用域插槽_(Scoped_Slot)",
+        "label": "作用域插槽 (Scoped Slot)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "高级特性",
+        "label": "高级特性",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "keep-alive_(内置组件)",
+        "label": "keep-alive (内置组件)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "Mixin_(混入)",
+        "label": "Mixin (混入)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "异步组件_(Async_Component)",
+        "label": "异步组件 (Async Component)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "render_函数___h()",
+        "label": "render 函数 / h()",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "Vue_3",
+        "label": "Vue 3",
+        "group": "framework",
+        "val": 9,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "Composition_API",
+        "label": "Composition API",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "setup",
+        "label": "setup",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "ref",
+        "label": "ref",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "reactive",
+        "label": "reactive",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "computed",
+        "label": "computed",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "watch",
+        "label": "watch",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "watchEffect",
+        "label": "watchEffect",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "toRef___toRefs",
+        "label": "toRef / toRefs",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "生命周期钩子",
+        "label": "生命周期钩子",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "新组件",
+        "label": "新组件",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "Teleport_(传送门)",
+        "label": "Teleport (传送门)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "Suspense_(异步组件占位)",
+        "label": "Suspense (异步组件占位)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "Fragments_(多根节点)",
+        "label": "Fragments (多根节点)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "生态系统_(Ecosystem)",
+        "label": "生态系统 (Ecosystem)",
+        "group": "core",
+        "val": 9,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "路由管理_(Routing)",
+        "label": "路由管理 (Routing)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "Vue_Router",
+        "label": "Vue Router",
+        "group": "framework",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "路由模式_(Modes)",
+        "label": "路由模式 (Modes)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "hash_(哈希模式)",
+        "label": "hash (哈希模式)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "history_(历史模式)",
+        "label": "history (历史模式)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "路由守卫_(Navigation_Guards)",
+        "label": "路由守卫 (Navigation Guards)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "动态路由_(Dynamic_Routing)",
+        "label": "动态路由 (Dynamic Routing)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "状态管理_(State_Management)",
+        "label": "状态管理 (State Management)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "Vuex_(适用于_Vue_2_3)",
+        "label": "Vuex (适用于 Vue 2/3)",
+        "group": "framework",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "State",
+        "label": "State",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "Getters",
+        "label": "Getters",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "Mutations_(同步)",
+        "label": "Mutations (同步)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "Actions_(异步)",
+        "label": "Actions (异步)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "Modules_(模块化)",
+        "label": "Modules (模块化)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "Pinia_(Vue_3+_推荐)",
+        "label": "Pinia (Vue 3+ 推荐)",
+        "group": "framework",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "构建工具_(Tooling)",
+        "label": "构建工具 (Tooling)",
+        "group": "tool",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "Vue_CLI_(基于_Webpack)",
+        "label": "Vue CLI (基于 Webpack)",
+        "group": "framework",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "Vite_(ESM-based)",
+        "label": "Vite (ESM-based)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "开发工具",
+        "label": "开发工具",
+        "group": "tool",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "Vue_DevTools_(浏览器插件)",
+        "label": "Vue DevTools (浏览器插件)",
+        "group": "framework",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "JavaScript_进阶",
+        "label": "JavaScript 进阶",
+        "group": "foundation",
+        "val": 11,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "面向对象",
+        "label": "面向对象",
+        "group": "core",
+        "val": 9,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "原型_(Prototype)",
+        "label": "原型 (Prototype)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "`prototype`_(函数属性)",
+        "label": "`prototype` (函数属性)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "`__proto__`_(对象属性，非标准)",
+        "label": "`__proto__` (对象属性，非标准)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "`Object_getPrototypeOf()`",
+        "label": "`Object.getPrototypeOf()`",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "原型链_(Prototype_Chain)",
+        "label": "原型链 (Prototype Chain)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "原型继承",
+        "label": "原型继承",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "Class_(ES6_类)",
+        "label": "Class (ES6 类)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "constructor_(构造函数)",
+        "label": "constructor (构造函数)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "extends_(继承)",
+        "label": "extends (继承)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "super_(父类引用)",
+        "label": "super (父类引用)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "静态方法_(static)",
+        "label": "静态方法 (static)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "私有字段_(#)",
+        "label": "私有字段 (#)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "getters___setters",
+        "label": "getters / setters",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "异步编程",
+        "label": "异步编程",
+        "group": "core",
+        "val": 9,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "事件循环",
+        "label": "事件循环",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "调用栈",
+        "label": "调用栈",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "Web_APIs",
+        "label": "Web APIs",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "任务队列",
+        "label": "任务队列",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "宏任务_(Macro_Task)",
+        "label": "宏任务 (Macro Task)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "微任务_(Micro_Task)",
+        "label": "微任务 (Micro Task)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "回调函数",
+        "label": "回调函数",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "回调地狱",
+        "label": "回调地狱",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "期约",
+        "label": "期约",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "期约结果_(Pending,_Fulfilled,_Rejected)",
+        "label": "期约结果 (Pending, Fulfilled, Rejected)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "期约扩展",
+        "label": "期约扩展",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "期约连锁",
+        "label": "期约连锁",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "期约链",
+        "label": "期约链",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "_then_(处理成功)",
+        "label": ".then (处理成功)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "_catch_(处理失败)",
+        "label": ".catch (处理失败)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "_finally_(无论成功失败)",
+        "label": ".finally (无论成功失败)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "期约常用方法",
+        "label": "期约常用方法",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "Promise_all_(全部成功)",
+        "label": "Promise.all (全部成功)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "Promise_race_(最快返回)",
+        "label": "Promise.race (最快返回)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "Promise_allSettled_(全部完成)",
+        "label": "Promise.allSettled (全部完成)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "Promise_any_(任一成功)",
+        "label": "Promise.any (任一成功)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "async___await",
+        "label": "async / await",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "Promise_的语法糖",
+        "label": "Promise 的语法糖",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "try___catch_(异步错误和捕获)",
+        "label": "try...catch (异步错误和捕获)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "迭代与元编程",
+        "label": "迭代与元编程",
+        "group": "core",
+        "val": 9,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "迭代器协议_(Iterator_Protocol)",
+        "label": "迭代器协议 (Iterator Protocol)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "`next()`_方法",
+        "label": "`next()` 方法",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "返回_`{_value,_done_}`",
+        "label": "返回 `{ value, done }`",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "可迭代协议_(Iterable_Protocol)",
+        "label": "可迭代协议 (Iterable Protocol)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "`[Symbol_iterator]`",
+        "label": "`[Symbol.iterator]`",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "生成器_(Generator)",
+        "label": "生成器 (Generator)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "`function*`_声明",
+        "label": "`function*` 声明",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "`yield`_(暂停执行)",
+        "label": "`yield` (暂停执行)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "`next(value)`_(恢复执行并传递值)",
+        "label": "`next(value)` (恢复执行并传递值)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "`return()`___`throw()`",
+        "label": "`return()` / `throw()`",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "异步生成器_(Async_Generators)",
+        "label": "异步生成器 (Async Generators)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "代理",
+        "label": "代理",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "捕获器",
+        "label": "捕获器",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "代理捕获器",
+        "label": "代理捕获器",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "捕获器不变式",
+        "label": "捕获器不变式",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "捕获器参数",
+        "label": "捕获器参数",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "多层代理",
+        "label": "多层代理",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "可撤销代理",
+        "label": "可撤销代理",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "提供与_Proxy_陷阱对应的默认行为",
+        "label": "提供与 Proxy 陷阱对应的默认行为",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "`Reflect_get()`,_`Reflect_set()`",
+        "label": "`Reflect.get()`, `Reflect.set()`",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "确保_`receiver`_的正确传递",
+        "label": "确保 `receiver` 的正确传递",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "Symbol",
+        "label": "Symbol",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "`Symbol_iterator`",
+        "label": "`Symbol.iterator`",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "`Symbol_toPrimitive`",
+        "label": "`Symbol.toPrimitive`",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "`Symbol_hasInstance`",
+        "label": "`Symbol.hasInstance`",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "TypeScript",
+        "label": "TypeScript",
+        "group": "foundation",
+        "val": 11,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "核心类型系统",
+        "label": "核心类型系统",
+        "group": "core",
+        "val": 9,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "类型注解",
+        "label": "类型注解",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "类型推断",
+        "label": "类型推断",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "类型别名",
+        "label": "类型别名",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "`type`_关键字",
+        "label": "`type` 关键字",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "基础类型",
+        "label": "基础类型",
+        "group": "core",
+        "val": 9,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "any",
+        "label": "any",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "unknown",
+        "label": "unknown",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "void",
+        "label": "void",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "never",
+        "label": "never",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "元组",
+        "label": "元组",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "枚举",
+        "label": "枚举",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "数字枚举",
+        "label": "数字枚举",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "字符串枚举",
+        "label": "字符串枚举",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "常量枚举_(const_enum)",
+        "label": "常量枚举 (const enum)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "接口",
+        "label": "接口",
+        "group": "core",
+        "val": 9,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "定义对象形态",
+        "label": "定义对象形态",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "可选属性_(?)",
+        "label": "可选属性 (?)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "只读属性_(readonly)",
+        "label": "只读属性 (readonly)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "函数类型",
+        "label": "函数类型",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "可索引类型",
+        "label": "可索引类型",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "继承接口_(extends)",
+        "label": "继承接口 (extends)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "实现接口_(implements)",
+        "label": "实现接口 (implements)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "泛型",
+        "label": "泛型",
+        "group": "core",
+        "val": 9,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "泛型函数",
+        "label": "泛型函数",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "泛型接口",
+        "label": "泛型接口",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "泛型类",
+        "label": "泛型类",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "泛型约束",
+        "label": "泛型约束",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "`extends`_关键字",
+        "label": "`extends` 关键字",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "泛型默认值",
+        "label": "泛型默认值",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "高级类型",
+        "label": "高级类型",
+        "group": "core",
+        "val": 9,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "联合类型_|",
+        "label": "联合类型 |",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "交叉类型_&",
+        "label": "交叉类型 &",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "字面量类型",
+        "label": "字面量类型",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "类型守卫",
+        "label": "类型守卫",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "typeof",
+        "label": "typeof",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "instanceof",
+        "label": "instanceof",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "in",
+        "label": "in",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "自定义守卫_(is)",
+        "label": "自定义守卫 (is)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "可空类型",
+        "label": "可空类型",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "`strictNullChecks`",
+        "label": "`strictNullChecks`",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "条件类型",
+        "label": "条件类型",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "`T_extends_U_?_X_:_Y`",
+        "label": "`T extends U ? X : Y`",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "`infer`_关键字",
+        "label": "`infer` 关键字",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "映射类型",
+        "label": "映射类型",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "`[K_in_keyof_T]`",
+        "label": "`[K in keyof T]`",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "`Partial<T>`,_`Required<T>`",
+        "label": "`Partial<T>`, `Required<T>`",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "`Readonly<T>`,_`Record<K,T>`",
+        "label": "`Readonly<T>`, `Record<K,T>`",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "`Pick<T,K>`,_`Omit<T,K>`",
+        "label": "`Pick<T,K>`, `Omit<T,K>`",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "`Exclude<T,U>`,_`Extract<T,U>`",
+        "label": "`Exclude<T,U>`, `Extract<T,U>`",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "`NonNullable<T>`",
+        "label": "`NonNullable<T>`",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "`Parameters<T>`,_`ReturnType<T>`",
+        "label": "`Parameters<T>`, `ReturnType<T>`",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "型变_(类型兼容性)",
+        "label": "型变 (类型兼容性)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "协变_(Covariance)",
+        "label": "协变 (Covariance)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "逆变_(Contravariance)",
+        "label": "逆变 (Contravariance)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "双向协变_(Bivariance)",
+        "label": "双向协变 (Bivariance)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "模块与声明",
+        "label": "模块与声明",
+        "group": "core",
+        "val": 9,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "命名空间_(旧)",
+        "label": "命名空间 (旧)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "ES_模块",
+        "label": "ES 模块",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "声明文件_(_d_ts)",
+        "label": "声明文件 (.d.ts)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "`declare`_关键字",
+        "label": "`declare` 关键字",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "@types",
+        "label": "@types",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "配置与编译",
+        "label": "配置与编译",
+        "group": "core",
+        "val": 9,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "tsconfig.json",
+        "label": "tsconfig.json",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "compilerOptions",
+        "label": "compilerOptions",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "strict_(严格模式)",
+        "label": "strict (严格模式)",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "(实验性功能)_装饰器",
+        "label": "(实验性功能) 装饰器",
+        "group": "core",
+        "val": 9,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "类装饰器",
+        "label": "类装饰器",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "方法装饰器",
+        "label": "方法装饰器",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "属性装饰器",
+        "label": "属性装饰器",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "参数装饰器",
+        "label": "参数装饰器",
+        "group": "core",
+        "val": 8,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "性能优化",
+        "label": "性能优化",
+        "group": "foundation",
+        "val": 11,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "缓存策略优化",
+        "label": "缓存策略优化",
+        "group": "core",
+        "val": 9,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "渲染优化",
+        "label": "渲染优化",
+        "group": "core",
+        "val": 9,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "图片优化",
+        "label": "图片优化",
+        "group": "core",
+        "val": 9,
+        "mastery": 0,
+        "level": "intermediate"
+      },
+      {
+        "id": "资源加载优化",
+        "label": "资源加载优化",
+        "group": "core",
+        "val": 9,
+        "mastery": 0,
+        "level": "intermediate"
+      }
+    ],
+    "links": [
+      {
+        "source": "核心概念",
+        "target": "MVVM_模式",
+        "type": "category"
+      },
+      {
+        "source": "MVVM_模式",
+        "target": "Virtual_DOM_(虚拟_DOM)",
+        "type": "category"
+      },
+      {
+        "source": "Virtual_DOM_(虚拟_DOM)",
+        "target": "Diff_算法",
+        "type": "category"
+      },
+      {
+        "source": "Virtual_DOM_(虚拟_DOM)",
+        "target": "Patch_(补丁)",
+        "type": "category"
+      },
+      {
+        "source": "MVVM_模式",
+        "target": "nextTick_(DOM_更新队列)",
+        "type": "category"
+      },
+      {
+        "source": "响应式原理",
+        "target": "Vue_2:_Object_defineProperty",
+        "type": "category"
+      },
+      {
+        "source": "Vue_2:_Object_defineProperty",
+        "target": "getter___setter",
+        "type": "category"
+      },
+      {
+        "source": "Vue_2:_Object_defineProperty",
+        "target": "数组方法的重写",
+        "type": "category"
+      },
+      {
+        "source": "响应式原理",
+        "target": "Vue_3:_Proxy",
+        "type": "category"
+      },
+      {
+        "source": "Vue_3:_Proxy",
+        "target": "Proxy",
+        "type": "category"
+      },
+      {
+        "source": "Vue_3:_Proxy",
+        "target": "Reflect",
+        "type": "category"
+      },
+      {
+        "source": "模板语法",
+        "target": "插值",
+        "type": "category"
+      },
+      {
+        "source": "模板语法",
+        "target": "指令",
+        "type": "category"
+      },
+      {
+        "source": "指令",
+        "target": "v-bind_(动态属性,_简写_:)",
+        "type": "category"
+      },
+      {
+        "source": "指令",
+        "target": "v-on_(事件监听,_简写_@)",
+        "type": "category"
+      },
+      {
+        "source": "指令",
+        "target": "v-model_(双向绑定)",
+        "type": "category"
+      },
+      {
+        "source": "指令",
+        "target": "v-if___v-else-if___v-else_(条件渲染)",
+        "type": "category"
+      },
+      {
+        "source": "指令",
+        "target": "v-show_(条件显示)",
+        "type": "category"
+      },
+      {
+        "source": "指令",
+        "target": "v-for_(列表渲染)",
+        "type": "category"
+      },
+      {
+        "source": "指令",
+        "target": "v-slot_(插槽)",
+        "type": "category"
+      },
+      {
+        "source": "模板语法",
+        "target": "过滤器_(Filters)_(Vue_2)",
+        "type": "category"
+      },
+      {
+        "source": "模板语法",
+        "target": "自定义指令_(Custom_Directives)",
+        "type": "category"
+      },
+      {
+        "source": "生命周期_(Lifecycle_Hooks)",
+        "target": "创建阶段_(Creation)",
+        "type": "category"
+      },
+      {
+        "source": "创建阶段_(Creation)",
+        "target": "beforeCreate",
+        "type": "category"
+      },
+      {
+        "source": "创建阶段_(Creation)",
+        "target": "created",
+        "type": "category"
+      },
+      {
+        "source": "生命周期_(Lifecycle_Hooks)",
+        "target": "挂载阶段_(Mounting)",
+        "type": "category"
+      },
+      {
+        "source": "挂载阶段_(Mounting)",
+        "target": "beforeMount",
+        "type": "category"
+      },
+      {
+        "source": "挂载阶段_(Mounting)",
+        "target": "mounted",
+        "type": "category"
+      },
+      {
+        "source": "生命周期_(Lifecycle_Hooks)",
+        "target": "更新阶段_(Updating)",
+        "type": "category"
+      },
+      {
+        "source": "更新阶段_(Updating)",
+        "target": "beforeUpdate",
+        "type": "category"
+      },
+      {
+        "source": "更新阶段_(Updating)",
+        "target": "updated",
+        "type": "category"
+      },
+      {
+        "source": "生命周期_(Lifecycle_Hooks)",
+        "target": "销毁阶段_(Destruction)",
+        "type": "category"
+      },
+      {
+        "source": "销毁阶段_(Destruction)",
+        "target": "beforeUnmount_(Vue_3)___beforeDestroy_(Vue_2)",
+        "type": "category"
+      },
+      {
+        "source": "销毁阶段_(Destruction)",
+        "target": "unmounted_(Vue_3)___destroyed_(Vue_2)",
+        "type": "category"
+      },
+      {
+        "source": "组件",
+        "target": "组件注册_(全局___局部)",
+        "type": "category"
+      },
+      {
+        "source": "组件",
+        "target": "组件通信_(Communication)",
+        "type": "category"
+      },
+      {
+        "source": "组件通信_(Communication)",
+        "target": "Props___$emit",
+        "type": "category"
+      },
+      {
+        "source": "组件通信_(Communication)",
+        "target": "v-model_(组件自定义)",
+        "type": "category"
+      },
+      {
+        "source": "组件通信_(Communication)",
+        "target": "provide___inject_(跨层级)",
+        "type": "category"
+      },
+      {
+        "source": "组件通信_(Communication)",
+        "target": "Event_Bus_(事件总线)",
+        "type": "category"
+      },
+      {
+        "source": "组件通信_(Communication)",
+        "target": "$refs",
+        "type": "category"
+      },
+      {
+        "source": "组件通信_(Communication)",
+        "target": "$parent___$root",
+        "type": "category"
+      },
+      {
+        "source": "组件",
+        "target": "插槽_(Slot)",
+        "type": "category"
+      },
+      {
+        "source": "插槽_(Slot)",
+        "target": "匿名插槽_(Default_Slot)",
+        "type": "category"
+      },
+      {
+        "source": "插槽_(Slot)",
+        "target": "具名插槽_(Named_Slot)",
+        "type": "category"
+      },
+      {
+        "source": "插槽_(Slot)",
+        "target": "作用域插槽_(Scoped_Slot)",
+        "type": "category"
+      },
+      {
+        "source": "组件",
+        "target": "高级特性",
+        "type": "category"
+      },
+      {
+        "source": "高级特性",
+        "target": "keep-alive_(内置组件)",
+        "type": "category"
+      },
+      {
+        "source": "高级特性",
+        "target": "Mixin_(混入)",
+        "type": "category"
+      },
+      {
+        "source": "高级特性",
+        "target": "异步组件_(Async_Component)",
+        "type": "category"
+      },
+      {
+        "source": "高级特性",
+        "target": "render_函数___h()",
+        "type": "category"
+      },
+      {
+        "source": "Vue_3",
+        "target": "Composition_API",
+        "type": "category"
+      },
+      {
+        "source": "Composition_API",
+        "target": "setup",
+        "type": "category"
+      },
+      {
+        "source": "Composition_API",
+        "target": "ref",
+        "type": "category"
+      },
+      {
+        "source": "Composition_API",
+        "target": "reactive",
+        "type": "category"
+      },
+      {
+        "source": "Composition_API",
+        "target": "computed",
+        "type": "category"
+      },
+      {
+        "source": "Composition_API",
+        "target": "watch",
+        "type": "category"
+      },
+      {
+        "source": "Composition_API",
+        "target": "watchEffect",
+        "type": "category"
+      },
+      {
+        "source": "Composition_API",
+        "target": "toRef___toRefs",
+        "type": "category"
+      },
+      {
+        "source": "Composition_API",
+        "target": "生命周期钩子",
+        "type": "category"
+      },
+      {
+        "source": "Vue_3",
+        "target": "新组件",
+        "type": "category"
+      },
+      {
+        "source": "新组件",
+        "target": "Teleport_(传送门)",
+        "type": "category"
+      },
+      {
+        "source": "新组件",
+        "target": "Suspense_(异步组件占位)",
+        "type": "category"
+      },
+      {
+        "source": "新组件",
+        "target": "Fragments_(多根节点)",
+        "type": "category"
+      },
+      {
+        "source": "生态系统_(Ecosystem)",
+        "target": "路由管理_(Routing)",
+        "type": "category"
+      },
+      {
+        "source": "路由管理_(Routing)",
+        "target": "Vue_Router",
+        "type": "category"
+      },
+      {
+        "source": "路由管理_(Routing)",
+        "target": "路由模式_(Modes)",
+        "type": "category"
+      },
+      {
+        "source": "路由模式_(Modes)",
+        "target": "hash_(哈希模式)",
+        "type": "category"
+      },
+      {
+        "source": "路由模式_(Modes)",
+        "target": "history_(历史模式)",
+        "type": "category"
+      },
+      {
+        "source": "路由管理_(Routing)",
+        "target": "路由守卫_(Navigation_Guards)",
+        "type": "category"
+      },
+      {
+        "source": "路由管理_(Routing)",
+        "target": "动态路由_(Dynamic_Routing)",
+        "type": "category"
+      },
+      {
+        "source": "生态系统_(Ecosystem)",
+        "target": "状态管理_(State_Management)",
+        "type": "category"
+      },
+      {
+        "source": "状态管理_(State_Management)",
+        "target": "Vuex_(适用于_Vue_2_3)",
+        "type": "category"
+      },
+      {
+        "source": "Vuex_(适用于_Vue_2_3)",
+        "target": "State",
+        "type": "category"
+      },
+      {
+        "source": "Vuex_(适用于_Vue_2_3)",
+        "target": "Getters",
+        "type": "category"
+      },
+      {
+        "source": "Vuex_(适用于_Vue_2_3)",
+        "target": "Mutations_(同步)",
+        "type": "category"
+      },
+      {
+        "source": "Vuex_(适用于_Vue_2_3)",
+        "target": "Actions_(异步)",
+        "type": "category"
+      },
+      {
+        "source": "Vuex_(适用于_Vue_2_3)",
+        "target": "Modules_(模块化)",
+        "type": "category"
+      },
+      {
+        "source": "状态管理_(State_Management)",
+        "target": "Pinia_(Vue_3+_推荐)",
+        "type": "category"
+      },
+      {
+        "source": "生态系统_(Ecosystem)",
+        "target": "构建工具_(Tooling)",
+        "type": "category"
+      },
+      {
+        "source": "构建工具_(Tooling)",
+        "target": "Vue_CLI_(基于_Webpack)",
+        "type": "category"
+      },
+      {
+        "source": "构建工具_(Tooling)",
+        "target": "Vite_(ESM-based)",
+        "type": "category"
+      },
+      {
+        "source": "生态系统_(Ecosystem)",
+        "target": "开发工具",
+        "type": "category"
+      },
+      {
+        "source": "开发工具",
+        "target": "Vue_DevTools_(浏览器插件)",
+        "type": "category"
+      },
+      {
+        "source": "JavaScript_进阶",
+        "target": "面向对象",
+        "type": "category"
+      },
+      {
+        "source": "面向对象",
+        "target": "原型_(Prototype)",
+        "type": "category"
+      },
+      {
+        "source": "原型_(Prototype)",
+        "target": "`prototype`_(函数属性)",
+        "type": "category"
+      },
+      {
+        "source": "原型_(Prototype)",
+        "target": "`__proto__`_(对象属性，非标准)",
+        "type": "category"
+      },
+      {
+        "source": "原型_(Prototype)",
+        "target": "`Object_getPrototypeOf()`",
+        "type": "category"
+      },
+      {
+        "source": "面向对象",
+        "target": "原型链_(Prototype_Chain)",
+        "type": "category"
+      },
+      {
+        "source": "原型链_(Prototype_Chain)",
+        "target": "原型继承",
+        "type": "category"
+      },
+      {
+        "source": "面向对象",
+        "target": "Class_(ES6_类)",
+        "type": "category"
+      },
+      {
+        "source": "Class_(ES6_类)",
+        "target": "constructor_(构造函数)",
+        "type": "category"
+      },
+      {
+        "source": "Class_(ES6_类)",
+        "target": "extends_(继承)",
+        "type": "category"
+      },
+      {
+        "source": "Class_(ES6_类)",
+        "target": "super_(父类引用)",
+        "type": "category"
+      },
+      {
+        "source": "Class_(ES6_类)",
+        "target": "静态方法_(static)",
+        "type": "category"
+      },
+      {
+        "source": "Class_(ES6_类)",
+        "target": "私有字段_(#)",
+        "type": "category"
+      },
+      {
+        "source": "Class_(ES6_类)",
+        "target": "getters___setters",
+        "type": "category"
+      },
+      {
+        "source": "JavaScript_进阶",
+        "target": "异步编程",
+        "type": "category"
+      },
+      {
+        "source": "异步编程",
+        "target": "事件循环",
+        "type": "category"
+      },
+      {
+        "source": "事件循环",
+        "target": "调用栈",
+        "type": "category"
+      },
+      {
+        "source": "事件循环",
+        "target": "Web_APIs",
+        "type": "category"
+      },
+      {
+        "source": "事件循环",
+        "target": "任务队列",
+        "type": "category"
+      },
+      {
+        "source": "事件循环",
+        "target": "宏任务_(Macro_Task)",
+        "type": "category"
+      },
+      {
+        "source": "事件循环",
+        "target": "微任务_(Micro_Task)",
+        "type": "category"
+      },
+      {
+        "source": "异步编程",
+        "target": "回调函数",
+        "type": "category"
+      },
+      {
+        "source": "回调函数",
+        "target": "回调地狱",
+        "type": "category"
+      },
+      {
+        "source": "异步编程",
+        "target": "期约",
+        "type": "category"
+      },
+      {
+        "source": "期约",
+        "target": "期约结果_(Pending,_Fulfilled,_Rejected)",
+        "type": "category"
+      },
+      {
+        "source": "期约",
+        "target": "期约扩展",
+        "type": "category"
+      },
+      {
+        "source": "期约",
+        "target": "期约连锁",
+        "type": "category"
+      },
+      {
+        "source": "期约",
+        "target": "期约链",
+        "type": "category"
+      },
+      {
+        "source": "期约",
+        "target": "_then_(处理成功)",
+        "type": "category"
+      },
+      {
+        "source": "期约",
+        "target": "_catch_(处理失败)",
+        "type": "category"
+      },
+      {
+        "source": "期约",
+        "target": "_finally_(无论成功失败)",
+        "type": "category"
+      },
+      {
+        "source": "期约",
+        "target": "期约常用方法",
+        "type": "category"
+      },
+      {
+        "source": "期约",
+        "target": "Promise_all_(全部成功)",
+        "type": "category"
+      },
+      {
+        "source": "期约",
+        "target": "Promise_race_(最快返回)",
+        "type": "category"
+      },
+      {
+        "source": "期约",
+        "target": "Promise_allSettled_(全部完成)",
+        "type": "category"
+      },
+      {
+        "source": "期约",
+        "target": "Promise_any_(任一成功)",
+        "type": "category"
+      },
+      {
+        "source": "异步编程",
+        "target": "async___await",
+        "type": "category"
+      },
+      {
+        "source": "async___await",
+        "target": "Promise_的语法糖",
+        "type": "category"
+      },
+      {
+        "source": "async___await",
+        "target": "try___catch_(异步错误和捕获)",
+        "type": "category"
+      },
+      {
+        "source": "JavaScript_进阶",
+        "target": "迭代与元编程",
+        "type": "category"
+      },
+      {
+        "source": "迭代与元编程",
+        "target": "迭代器协议_(Iterator_Protocol)",
+        "type": "category"
+      },
+      {
+        "source": "迭代器协议_(Iterator_Protocol)",
+        "target": "`next()`_方法",
+        "type": "category"
+      },
+      {
+        "source": "迭代器协议_(Iterator_Protocol)",
+        "target": "返回_`{_value,_done_}`",
+        "type": "category"
+      },
+      {
+        "source": "迭代与元编程",
+        "target": "可迭代协议_(Iterable_Protocol)",
+        "type": "category"
+      },
+      {
+        "source": "可迭代协议_(Iterable_Protocol)",
+        "target": "`[Symbol_iterator]`",
+        "type": "category"
+      },
+      {
+        "source": "迭代与元编程",
+        "target": "生成器_(Generator)",
+        "type": "category"
+      },
+      {
+        "source": "生成器_(Generator)",
+        "target": "`function*`_声明",
+        "type": "category"
+      },
+      {
+        "source": "生成器_(Generator)",
+        "target": "`yield`_(暂停执行)",
+        "type": "category"
+      },
+      {
+        "source": "生成器_(Generator)",
+        "target": "`next(value)`_(恢复执行并传递值)",
+        "type": "category"
+      },
+      {
+        "source": "生成器_(Generator)",
+        "target": "`return()`___`throw()`",
+        "type": "category"
+      },
+      {
+        "source": "生成器_(Generator)",
+        "target": "异步生成器_(Async_Generators)",
+        "type": "category"
+      },
+      {
+        "source": "迭代与元编程",
+        "target": "代理",
+        "type": "category"
+      },
+      {
+        "source": "代理",
+        "target": "捕获器",
+        "type": "category"
+      },
+      {
+        "source": "代理",
+        "target": "代理捕获器",
+        "type": "category"
+      },
+      {
+        "source": "代理",
+        "target": "捕获器不变式",
+        "type": "category"
+      },
+      {
+        "source": "代理",
+        "target": "捕获器参数",
+        "type": "category"
+      },
+      {
+        "source": "代理",
+        "target": "代理",
+        "type": "category"
+      },
+      {
+        "source": "代理",
+        "target": "多层代理",
+        "type": "category"
+      },
+      {
+        "source": "代理",
+        "target": "可撤销代理",
+        "type": "category"
+      },
+      {
+        "source": "迭代与元编程",
+        "target": "Reflect",
+        "type": "category"
+      },
+      {
+        "source": "Reflect",
+        "target": "提供与_Proxy_陷阱对应的默认行为",
+        "type": "category"
+      },
+      {
+        "source": "Reflect",
+        "target": "`Reflect_get()`,_`Reflect_set()`",
+        "type": "category"
+      },
+      {
+        "source": "Reflect",
+        "target": "确保_`receiver`_的正确传递",
+        "type": "category"
+      },
+      {
+        "source": "迭代与元编程",
+        "target": "Symbol",
+        "type": "category"
+      },
+      {
+        "source": "Symbol",
+        "target": "`Symbol_iterator`",
+        "type": "category"
+      },
+      {
+        "source": "Symbol",
+        "target": "`Symbol_toPrimitive`",
+        "type": "category"
+      },
+      {
+        "source": "Symbol",
+        "target": "`Symbol_hasInstance`",
+        "type": "category"
+      },
+      {
+        "source": "TypeScript",
+        "target": "核心类型系统",
+        "type": "category"
+      },
+      {
+        "source": "核心类型系统",
+        "target": "类型注解",
+        "type": "category"
+      },
+      {
+        "source": "核心类型系统",
+        "target": "类型推断",
+        "type": "category"
+      },
+      {
+        "source": "核心类型系统",
+        "target": "类型别名",
+        "type": "category"
+      },
+      {
+        "source": "类型别名",
+        "target": "`type`_关键字",
+        "type": "category"
+      },
+      {
+        "source": "TypeScript",
+        "target": "基础类型",
+        "type": "category"
+      },
+      {
+        "source": "基础类型",
+        "target": "any",
+        "type": "category"
+      },
+      {
+        "source": "基础类型",
+        "target": "unknown",
+        "type": "category"
+      },
+      {
+        "source": "基础类型",
+        "target": "void",
+        "type": "category"
+      },
+      {
+        "source": "基础类型",
+        "target": "never",
+        "type": "category"
+      },
+      {
+        "source": "基础类型",
+        "target": "元组",
+        "type": "category"
+      },
+      {
+        "source": "基础类型",
+        "target": "枚举",
+        "type": "category"
+      },
+      {
+        "source": "枚举",
+        "target": "数字枚举",
+        "type": "category"
+      },
+      {
+        "source": "枚举",
+        "target": "字符串枚举",
+        "type": "category"
+      },
+      {
+        "source": "枚举",
+        "target": "常量枚举_(const_enum)",
+        "type": "category"
+      },
+      {
+        "source": "TypeScript",
+        "target": "接口",
+        "type": "category"
+      },
+      {
+        "source": "接口",
+        "target": "定义对象形态",
+        "type": "category"
+      },
+      {
+        "source": "接口",
+        "target": "可选属性_(?)",
+        "type": "category"
+      },
+      {
+        "source": "接口",
+        "target": "只读属性_(readonly)",
+        "type": "category"
+      },
+      {
+        "source": "接口",
+        "target": "函数类型",
+        "type": "category"
+      },
+      {
+        "source": "接口",
+        "target": "可索引类型",
+        "type": "category"
+      },
+      {
+        "source": "接口",
+        "target": "继承接口_(extends)",
+        "type": "category"
+      },
+      {
+        "source": "接口",
+        "target": "实现接口_(implements)",
+        "type": "category"
+      },
+      {
+        "source": "TypeScript",
+        "target": "泛型",
+        "type": "category"
+      },
+      {
+        "source": "泛型",
+        "target": "泛型函数",
+        "type": "category"
+      },
+      {
+        "source": "泛型",
+        "target": "泛型接口",
+        "type": "category"
+      },
+      {
+        "source": "泛型",
+        "target": "泛型类",
+        "type": "category"
+      },
+      {
+        "source": "泛型",
+        "target": "泛型约束",
+        "type": "category"
+      },
+      {
+        "source": "泛型约束",
+        "target": "`extends`_关键字",
+        "type": "category"
+      },
+      {
+        "source": "泛型",
+        "target": "泛型默认值",
+        "type": "category"
+      },
+      {
+        "source": "TypeScript",
+        "target": "高级类型",
+        "type": "category"
+      },
+      {
+        "source": "高级类型",
+        "target": "联合类型_|",
+        "type": "category"
+      },
+      {
+        "source": "高级类型",
+        "target": "交叉类型_&",
+        "type": "category"
+      },
+      {
+        "source": "高级类型",
+        "target": "字面量类型",
+        "type": "category"
+      },
+      {
+        "source": "高级类型",
+        "target": "类型守卫",
+        "type": "category"
+      },
+      {
+        "source": "类型守卫",
+        "target": "typeof",
+        "type": "category"
+      },
+      {
+        "source": "类型守卫",
+        "target": "instanceof",
+        "type": "category"
+      },
+      {
+        "source": "类型守卫",
+        "target": "in",
+        "type": "category"
+      },
+      {
+        "source": "类型守卫",
+        "target": "自定义守卫_(is)",
+        "type": "category"
+      },
+      {
+        "source": "高级类型",
+        "target": "可空类型",
+        "type": "category"
+      },
+      {
+        "source": "可空类型",
+        "target": "`strictNullChecks`",
+        "type": "category"
+      },
+      {
+        "source": "高级类型",
+        "target": "条件类型",
+        "type": "category"
+      },
+      {
+        "source": "条件类型",
+        "target": "`T_extends_U_?_X_:_Y`",
+        "type": "category"
+      },
+      {
+        "source": "条件类型",
+        "target": "`infer`_关键字",
+        "type": "category"
+      },
+      {
+        "source": "高级类型",
+        "target": "映射类型",
+        "type": "category"
+      },
+      {
+        "source": "映射类型",
+        "target": "`[K_in_keyof_T]`",
+        "type": "category"
+      },
+      {
+        "source": "映射类型",
+        "target": "`Partial<T>`,_`Required<T>`",
+        "type": "category"
+      },
+      {
+        "source": "映射类型",
+        "target": "`Readonly<T>`,_`Record<K,T>`",
+        "type": "category"
+      },
+      {
+        "source": "映射类型",
+        "target": "`Pick<T,K>`,_`Omit<T,K>`",
+        "type": "category"
+      },
+      {
+        "source": "映射类型",
+        "target": "`Exclude<T,U>`,_`Extract<T,U>`",
+        "type": "category"
+      },
+      {
+        "source": "映射类型",
+        "target": "`NonNullable<T>`",
+        "type": "category"
+      },
+      {
+        "source": "映射类型",
+        "target": "`Parameters<T>`,_`ReturnType<T>`",
+        "type": "category"
+      },
+      {
+        "source": "高级类型",
+        "target": "型变_(类型兼容性)",
+        "type": "category"
+      },
+      {
+        "source": "型变_(类型兼容性)",
+        "target": "协变_(Covariance)",
+        "type": "category"
+      },
+      {
+        "source": "型变_(类型兼容性)",
+        "target": "逆变_(Contravariance)",
+        "type": "category"
+      },
+      {
+        "source": "型变_(类型兼容性)",
+        "target": "双向协变_(Bivariance)",
+        "type": "category"
+      },
+      {
+        "source": "TypeScript",
+        "target": "模块与声明",
+        "type": "category"
+      },
+      {
+        "source": "模块与声明",
+        "target": "命名空间_(旧)",
+        "type": "category"
+      },
+      {
+        "source": "模块与声明",
+        "target": "ES_模块",
+        "type": "category"
+      },
+      {
+        "source": "模块与声明",
+        "target": "声明文件_(_d_ts)",
+        "type": "category"
+      },
+      {
+        "source": "声明文件_(_d_ts)",
+        "target": "`declare`_关键字",
+        "type": "category"
+      },
+      {
+        "source": "声明文件_(_d_ts)",
+        "target": "@types",
+        "type": "category"
+      },
+      {
+        "source": "TypeScript",
+        "target": "配置与编译",
+        "type": "category"
+      },
+      {
+        "source": "配置与编译",
+        "target": "tsconfig.json",
+        "type": "category"
+      },
+      {
+        "source": "tsconfig.json",
+        "target": "compilerOptions",
+        "type": "category"
+      },
+      {
+        "source": "tsconfig.json",
+        "target": "strict_(严格模式)",
+        "type": "category"
+      },
+      {
+        "source": "TypeScript",
+        "target": "(实验性功能)_装饰器",
+        "type": "category"
+      },
+      {
+        "source": "(实验性功能)_装饰器",
+        "target": "类装饰器",
+        "type": "category"
+      },
+      {
+        "source": "(实验性功能)_装饰器",
+        "target": "方法装饰器",
+        "type": "category"
+      },
+      {
+        "source": "(实验性功能)_装饰器",
+        "target": "属性装饰器",
+        "type": "category"
+      },
+      {
+        "source": "(实验性功能)_装饰器",
+        "target": "参数装饰器",
+        "type": "category"
+      },
+      {
+        "source": "性能优化",
+        "target": "缓存策略优化",
+        "type": "category"
+      },
+      {
+        "source": "性能优化",
+        "target": "渲染优化",
+        "type": "category"
+      },
+      {
+        "source": "性能优化",
+        "target": "图片优化",
+        "type": "category"
+      },
+      {
+        "source": "性能优化",
+        "target": "资源加载优化",
+        "type": "category"
+      }
+    ]
+  },
+  "total_beginner_nodes": 419,
+  "total_intermediate_nodes": 234,
+  "total_beginner_links": 423,
+  "total_intermediate_links": 226
+}

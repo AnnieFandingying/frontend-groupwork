@@ -4,18 +4,13 @@
     <div class="flex items-center justify-between mb-4 sticky top-0 bg-white z-10 py-2">
       <div class="flex items-center gap-2">
         <h2 class="text-sm font-bold text-gray-700">前沿资讯</h2>
-        <span class="px-2 py-0.5 bg-primary/10 text-primary text-xs rounded-full">{{ newsItems.length }}</span>
+        <span class="px-2 py-0.5 bg-primary/10 text-primary text-xs rounded-full">{{ totalItems }}</span>
       </div>
       <div class="flex items-center gap-2">
         <select v-model="selectedSource" @change="fetchNews" class="text-xs border border-gray-200 rounded px-2 py-1">
           <option value="">所有来源</option>
           <option v-for="source in sources" :key="source" :value="source">{{ source }}</option>
         </select>
-        <button @click="refreshNews" :disabled="isLoading" 
-                class="px-2 py-1 bg-primary text-white text-xs rounded hover:bg-orange-600 disabled:opacity-50">
-          <Loader2 v-if="isLoading" :size="12" class="animate-spin" />
-          <RefreshCw v-else :size="12" />
-        </button>
       </div>
     </div>
 
@@ -29,7 +24,7 @@
       >
         <div class="flex justify-between items-start mb-2">
           <span class="text-xs font-bold text-primary uppercase tracking-wider">{{ item.source }}</span>
-          <span class="text-xs text-gray-400">{{ formatDate(item.published_at) }}</span>
+          <span class="text-xs text-gray-400" :title="'发布时间: ' + formatDate(item.published_at)">{{ formatDate(item.published_at) }}</span>
         </div>
         
         <h3 class="font-semibold text-gray-800 mb-2 group-hover:text-primary transition-colors leading-snug">
@@ -54,20 +49,38 @@
         </div>
       </div>
     </div>
+
+    <!-- 分页控制 -->
+    <div v-if="!isLoading && newsItems.length > 0" class="flex items-center justify-center gap-2 mt-6 pb-4">
+      <button 
+        @click="prevPage" 
+        :disabled="currentPage === 1"
+        class="px-3 py-1 text-xs rounded border border-gray-200 hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed"
+      >
+        上一页
+      </button>
+      <span class="text-xs text-gray-600">
+        第 {{ currentPage }} 页 / 共 {{ totalPages }} 页 (共 {{ totalItems }} 条)
+      </span>
+      <button 
+        @click="nextPage" 
+        :disabled="currentPage >= totalPages"
+        class="px-3 py-1 text-xs rounded border border-gray-200 hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed"
+      >
+        下一页
+      </button>
+    </div>
     
     <!-- 加载状态 -->
     <div v-if="isLoading" class="flex items-center justify-center py-8">
       <Loader2 :size="24" class="animate-spin text-primary" />
-      <span class="ml-2 text-gray-500">加载中...</span>
+      <span class="ml-2 text-gray-500">爬取中...</span>
     </div>
     
     <!-- 空状态 -->
     <div v-if="!isLoading && newsItems.length === 0" class="text-center py-8 text-gray-400">
       <div class="text-4xl mb-2">📰</div>
       <p>暂无新闻数据</p>
-      <button @click="refreshNews" class="mt-2 px-4 py-2 bg-primary text-white text-sm rounded hover:bg-orange-600">
-        立即获取
-      </button>
     </div>
     
     <!-- 错误状态 -->
@@ -83,7 +96,7 @@
 
 <script setup lang="ts">
 import { ref, onMounted } from 'vue';
-import { ExternalLink, Tag, RefreshCw, Loader2 } from 'lucide-vue-next';
+import { ExternalLink, Tag, Loader2 } from 'lucide-vue-next';
 
 interface NewsItem {
   id: number;
@@ -101,6 +114,10 @@ const sources = ref<string[]>([]);
 const selectedSource = ref('');
 const isLoading = ref(false);
 const error = ref('');
+const currentPage = ref(1);
+const pageSize = 20;
+const totalItems = ref(0);
+const totalPages = ref(0);
 
 // 获取新闻数据
 const fetchNews = async () => {
@@ -108,15 +125,17 @@ const fetchNews = async () => {
   error.value = '';
   
   try {
+    const skip = (currentPage.value - 1) * pageSize;
     const params = new URLSearchParams();
-    params.append('limit', '20');
+    params.append('limit', pageSize.toString());
+    params.append('skip', skip.toString());
     if (selectedSource.value) {
       params.append('source', selectedSource.value);
     }
     
     const API_BASE = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000';
     console.log('请求新闻API:', `${API_BASE}/api/v1/news?${params}`);
-
+    
     const response = await fetch(`${API_BASE}/api/v1/news?${params}`, {
       method: 'GET',
       headers: {
@@ -135,6 +154,9 @@ const fetchNews = async () => {
     const data = await response.json();
     console.log('获取到的新闻数据:', data);
     newsItems.value = data;
+    
+    // 获取总数
+    await fetchTotalCount();
   } catch (err) {
     console.error('获取新闻失败:', err);
     error.value = err instanceof Error ? err.message : '获取新闻失败';
@@ -143,44 +165,54 @@ const fetchNews = async () => {
   }
 };
 
+// 获取新闻总数
+const fetchTotalCount = async () => {
+  try {
+    const params = new URLSearchParams();
+    if (selectedSource.value) {
+      params.append('source', selectedSource.value);
+    }
+    
+    const API_BASE = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000';
+    const response = await fetch(`${API_BASE}/api/v1/news/count?${params}`);
+    
+    if (response.ok) {
+      const data = await response.json();
+      totalItems.value = data.count || 0;
+      totalPages.value = Math.ceil(totalItems.value / pageSize);
+    }
+  } catch (err) {
+    console.error('获取新闻总数失败:', err);
+  }
+};
+
+// 上一页
+const prevPage = () => {
+  if (currentPage.value > 1) {
+    currentPage.value--;
+    fetchNews();
+  }
+};
+
+// 下一页
+const nextPage = () => {
+  if (currentPage.value < totalPages.value) {
+    currentPage.value++;
+    fetchNews();
+  }
+};
+
 // 获取新闻源列表
 const fetchSources = async () => {
   try {
-   const API_BASE = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000';
-   const response = await fetch(`${API_BASE}/api/v1/news/sources`);
+    const API_BASE = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000';
+    const response = await fetch(`${API_BASE}/api/v1/news/sources`);
     if (response.ok) {
       const data = await response.json();
       sources.value = data;
     }
   } catch (err) {
     console.error('获取新闻源失败:', err);
-  }
-};
-
-// 刷新新闻（手动爬取）
-const refreshNews = async () => {
-  isLoading.value = true;
-  error.value = '';
-  
-  try {
-    const API_BASE = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000';
-    const response = await fetch(`${API_BASE}/api/v1/news/crawl`, {
-      method: 'POST'
-    });
-    
-    if (!response.ok) {
-      throw new Error('爬取新闻失败');
-    }
-    
-    const result = await response.json();
-    console.log('爬取结果:', result);
-    
-    // 爬取完成后重新获取新闻
-    await fetchNews();
-  } catch (err) {
-    console.error('爬取新闻失败:', err);
-    error.value = err instanceof Error ? err.message : '爬取新闻失败';
-    isLoading.value = false;
   }
 };
 

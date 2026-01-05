@@ -92,6 +92,21 @@ async def get_news_sources(db: Session = Depends(get_db)):
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"获取新闻源失败: {str(e)}")
 
+@router.get("/news/count")
+async def get_news_count(
+    source: Optional[str] = None,
+    db: Session = Depends(get_db)
+):
+    """获取新闻总数"""
+    try:
+        query = db.query(NewsItem)
+        if source:
+            query = query.filter(NewsItem.source == source)
+        count = query.count()
+        return {"count": count}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"获取新闻总数失败: {str(e)}")
+
 @router.get("/news/stats")
 async def get_news_stats(db: Session = Depends(get_db)):
     """获取新闻统计信息"""
