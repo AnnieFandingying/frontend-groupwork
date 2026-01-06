@@ -5,14 +5,36 @@
         <h2 class="text-xl font-semibold text-gray-800">每日前端挑战</h2>
         <p class="text-sm text-gray-500">题型每日刷新，涵盖填空、选择、代码实战</p>
       </div>
-      <button
-        @click="pickRandomChallenge"
-        class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-primary text-white hover:bg-primary/90 transition-colors"
-      >
-        <RefreshCw :size="16" />
-        随机一题
-      </button>
+      <div class="flex items-center gap-2">
+        <button
+          @click="pickRandomChallenge"
+          class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-primary text-white hover:bg-primary/90 transition-colors"
+        >
+          <RefreshCw :size="16" />
+          随机一题
+        </button>
+        <button
+          @click="generateAIChallengeTopic"
+          :disabled="aiGenerationLoading"
+          :class="[
+            'inline-flex items-center gap-2 px-4 py-2 rounded-lg transition-colors',
+            aiGenerationLoading 
+              ? 'bg-gray-200 text-gray-500 cursor-not-allowed' 
+              : 'bg-amber-500 text-white hover:bg-amber-600'
+          ]"
+        >
+          <Sparkles :size="16" />
+          {{ aiGenerationLoading ? '生成中...' : 'AI 生成' }}
+        </button>
+      </div>
     </header>
+
+    <!-- AI 错误提示 -->
+    <div v-if="aiGenerationError" class="rounded-lg bg-rose-50 border border-rose-200 p-4">
+      <p class="text-sm text-rose-700">
+        <strong>生成失败：</strong>{{ aiGenerationError }}
+      </p>
+    </div>
 
     <section class="bg-primary/5 border border-primary/20 rounded-xl p-5 space-y-5">
       <div class="flex items-center gap-3">
@@ -217,8 +239,9 @@
 
 <script setup lang="ts">
 import { computed, reactive, ref, watch } from 'vue';
-import { Lightbulb, RefreshCw, ExternalLink } from 'lucide-vue-next';
+import { Lightbulb, RefreshCw, ExternalLink, Sparkles } from 'lucide-vue-next';
 import questionBankData from '../data/classic-question-bank.json';
+import { generateDailyChallenge as generateAIChallenge } from '../services/questionGeneratorService';
 
 interface ChallengeReference {
   label: string;
@@ -407,6 +430,38 @@ const topicConfigs: Record<Exclude<TopicKey, 'all'>, TopicConfig> = {
       }
     ],
     codings: [
+      {
+        prompt: '制作一个个人简历页。目标：用纯 HTML+CSS 制作静态页面。核心技能：基础 HTML 标签（<section, <div 等）。',
+        focus: 'HTML/CSS 入门',
+        starterCode: `<!-- 在这里开始你的简历代码 -->
+<section class="resume">
+  <h1>我的简历</h1>
+  <div class="info">
+    <p>姓名：张三</p>
+    <p>职位：前端开发工程师</p>
+  </div>
+</section>`,
+        expectation: '使用 section, div, h1, p 等基础标签构建一个清晰的简历结构。',
+        explanation: '通过制作简历页，可以快速掌握 HTML 标签的嵌套和基础 CSS 布局。',
+        checks: ['section', 'div', 'h1', 'p']
+      },
+      {
+        prompt: '开发一个简单的待办事项 (Todo List) 应用。目标：实现任务的添加、显示和状态切换。',
+        focus: 'JavaScript 交互',
+        starterCode: `<!-- HTML 结构 -->
+<div id="app">
+  <input type="text" id="todo-input" placeholder="添加新任务">
+  <button id="add-btn">添加</button>
+  <ul id="todo-list"></ul>
+</div>
+
+<script>
+// 在这里编写你的 JS 逻辑
+<\/script>`,
+        expectation: '点击添加按钮时，将输入框内容添加到列表中，并清空输入框。',
+        explanation: '待办事项应用是学习 DOM 操作和事件处理的经典入门项目。',
+        checks: ['addeventlistener', 'createelement', 'appendchild', 'value']
+      },
       {
         prompt: '根据提供的结构片段，使用语义标签重写页面骨架。',
         focus: '语义布局',
@@ -1134,7 +1189,18 @@ const generateDailyChallenge = (topicKey: TopicKey, seed: number): DailyChalleng
 const selectedTopic = ref<TopicKey>('all');
 const activeSeed = ref<number>(getDailySeed(selectedTopic.value));
 
-const activeChallenge = computed(() => generateDailyChallenge(selectedTopic.value, activeSeed.value));
+// AI 生成题目的相关状态
+const useAIGenerated = ref(false);
+const aiGenerationLoading = ref(false);
+const aiGenerationError = ref<string | null>(null);
+const aiGeneratedChallenge = ref<DailyChallenge | null>(null);
+
+const activeChallenge = computed(() => {
+  if (useAIGenerated.value && aiGeneratedChallenge.value) {
+    return aiGeneratedChallenge.value;
+  }
+  return generateDailyChallenge(selectedTopic.value, activeSeed.value);
+});
 
 const activeTopicLabel = computed(() => topicLabels[activeChallenge.value.topic] ?? '综合专题');
 
@@ -1247,6 +1313,84 @@ const pickRandomChallenge = () => {
 const setTopic = (topicKey: TopicKey) => {
   selectedTopic.value = topicKey;
   activeSeed.value = getDailySeed(topicKey);
+};
+
+// AI 生成题目的函数
+const generateAIChallengeTopic = async () => {
+  // 确定要使用的主题
+  const availableTopics = Object.keys(topicConfigs) as Array<Exclude<TopicKey, 'all'>>;
+  const topic = selectedTopic.value === 'all' 
+    ? availableTopics[Math.floor(Math.random() * availableTopics.length)]
+    : selectedTopic.value;
+
+  aiGenerationLoading.value = true;
+  aiGenerationError.value = null;
+
+  try {
+    const result = await generateAIChallenge(topic);
+    
+    // 将 AI 生成的问题转换为内部格式
+    const questions: ChallengeQuestion[] = result.questions.map((q, index) => {
+      const baseQuestion: ChallengeQuestion = {
+        id: `${q.id}`,
+        type: q.type,
+        prompt: q.prompt,
+        focus: q.focus,
+        explanation: q.explanation
+      };
+
+      if (q.type === 'fill-in' && q.blanks) {
+        return {
+          ...baseQuestion,
+          blanks: q.blanks.map(b => ({
+            id: `${q.id}-blank-${b.label}`,
+            label: b.label,
+            answer: b.answer,
+            hint: b.hint
+          }))
+        };
+      }
+
+      if (q.type === 'multiple-choice' && q.options) {
+        return {
+          ...baseQuestion,
+          options: q.options.map((o, idx) => ({
+            id: `${q.id}-option-${idx}`,
+            label: o.label,
+            text: o.text,
+            correct: o.correct
+          }))
+        };
+      }
+
+      if (q.type === 'coding') {
+        return {
+          ...baseQuestion,
+          starterCode: q.starterCode,
+          expectation: q.expectation,
+          checks: q.checks
+        };
+      }
+
+      return baseQuestion;
+    });
+
+    aiGeneratedChallenge.value = {
+      id: `ai-challenge-${Date.now()}`,
+      title: result.title,
+      description: result.description,
+      topic: topic,
+      questions: questions
+    };
+
+    useAIGenerated.value = true;
+  } catch (error) {
+    const errorMessage = error instanceof Error ? error.message : '生成题目失败，请重试';
+    aiGenerationError.value = errorMessage;
+    console.error('生成 AI 题目失败:', error);
+  } finally {
+    aiGenerationLoading.value = false;
+  }
 };
 </script>
 
